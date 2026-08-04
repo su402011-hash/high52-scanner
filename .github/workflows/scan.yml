@@ -36,3 +36,4 @@ jobs:
           git add outputs/
           git diff --cached --quiet || git commit -m "scan $(date -u +'%Y-%m-%d %H:%M') UTC"
           git push
+          
