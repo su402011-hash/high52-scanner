@@ -1,16 +1,16 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-08-03,US,AMZN,Amazon,287.16,,
-2026-08-03,US,AMP,Ameriprise Financial,553.82,,
-2026-08-03,US,BRK-B,Berkshire Hathaway,520.66,,
-2026-08-03,US,BMY,Bristol Myers Squibb,68.1,,
-2026-08-03,US,DVA,DaVita,247.49,,
-2026-08-03,US,DXCM,Dexcom,87.63,,
-2026-08-03,US,ETN,Eaton Corporation,438.76,,
-2026-08-03,US,EA,Electronic Arts,209.97,,
-2026-08-03,US,BEN,Franklin Resources,35.43,,
-2026-08-03,US,GRMN,Garmin,304.98,,
-2026-08-03,US,PFG,Principal Financial Group,115.71,,
-2026-08-03,US,RJF,Raymond James Financial,179.29,,
-2026-08-03,US,ROST,Ross Stores,257.0,,
-2026-08-03,US,SWK,Stanley Black & Decker,98.13,,
-2026-08-03,US,TGT,Target Corporation,150.07,,
+2026-08-03,US,ETN,Eaton Corporation,438.76,438.23,5.55
+2026-08-03,US,DXCM,Dexcom,87.63,87.31,4.63
+2026-08-03,US,AMZN,Amazon,287.2,284.02,4.58
+2026-08-03,US,BEN,Franklin Resources,35.43,35.24,4.08
+2026-08-03,US,GRMN,Garmin,305.0,304.76,3.74
+2026-08-03,US,SWK,Stanley Black & Decker,98.13,98.11,3.73
+2026-08-03,US,TGT,Target Corporation,150.07,149.35,3.36
+2026-08-03,US,PFG,Principal Financial Group,115.71,115.13,1.26
+2026-08-03,US,AMP,Ameriprise Financial,553.82,552.07,1.14
+2026-08-03,US,RJF,Raymond James Financial,179.29,177.68,0.97
+2026-08-03,US,ROST,Ross Stores,257.0,252.91,0.73
+2026-08-03,US,BRK-B,Berkshire Hathaway,520.67,513.14,0.31
+2026-08-03,US,BMY,Bristol Myers Squibb,68.1,65.47,0.24
+2026-08-03,US,EA,Electronic Arts,209.97,209.91,0.02
+2026-08-03,US,DVA,DaVita,247.49,233.68,-2.67
