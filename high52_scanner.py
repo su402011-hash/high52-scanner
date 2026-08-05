@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-52週高値スキャナー v2 (日米対応)
-================================
-v1からの変更点:
-- Wikipedia取得にUser-Agentを付与 (403 Forbidden対策)
-- yfinanceダウンロードに3回リトライを追加
-- 取得成功した銘柄数をログ出力 (診断用)
-- 結果ゼロでも outputs/last_run.txt を必ず保存 (実行記録)
+52週高値スキャナー v3 (日米対応 + バリュー/グロース探索)
+========================================================
+コマンド:
+  python high52_scanner.py scan         # 52週高値更新銘柄 (日米)
+  python high52_scanner.py rank         # 高値更新回数ランキング
+  python high52_scanner.py value_scan   # 日本の中小型割安バリュー株
+  python high52_scanner.py growth_scan  # テンバガー候補 (小型高成長)
 
-使い方:
-  python high52_scanner.py scan   # 本日の52週高値更新銘柄を抽出
-  python high52_scanner.py rank   # 更新回数ランキング
+value_scan の条件 (VALUE_* 定数で調整可):
+  時価総額100億〜3000億円 / PBR<1 / PER<=12 / 配当利回り>=3% /
+  株価が52週レンジ下位30%圏
+growth_scan の条件 (GROWTH_* 定数で調整可):
+  時価総額500億円以下 / 売上成長率>=20% / ROE>=8% /
+  株価が52週レンジ上位40%圏 (資金流入が始まっている小型成長株)
 """
 
 import io
@@ -29,6 +32,23 @@ UA_HEADERS = {
                    "AppleWebKit/537.36 (KHTML, like Gecko) "
                    "Chrome/126.0 Safari/537.36")
 }
+JPX_URL = ("https://www.jpx.co.jp/markets/statistics-equities/misc/"
+           "tvdivq0000001vg2-att/data_j.xls")
+
+# ---- スクリーニング条件 (自由に調整OK) ----
+VALUE_MCAP_MIN = 100e8        # 100億円
+VALUE_MCAP_MAX = 3000e8       # 3000億円
+VALUE_PBR_MAX = 1.0
+VALUE_PER_MAX = 12.0
+VALUE_YIELD_MIN = 0.03        # 3%
+VALUE_POS_MAX = 0.30          # 52週レンジ下位30%
+
+GROWTH_MCAP_MAX = 500e8       # 500億円
+GROWTH_REV_MIN = 0.20         # 売上成長20%
+GROWTH_ROE_MIN = 0.08         # ROE8%
+GROWTH_POS_MIN = 0.60         # 52週レンジ上位40%圏
+
+MAX_FUND_CALLS = 350          # 財務指標の取得件数上限 (実行時間の制御)
 
 # ---------------------------------------------------------------
 # 銘柄ユニバース
@@ -55,17 +75,13 @@ JP_DEFAULT_TICKERS = {
 
 
 def get_us_tickers() -> dict:
-    """S&P500構成銘柄をWikipediaから取得 (User-Agent付き)。失敗時は空dict。"""
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
     try:
         resp = requests.get(url, headers=UA_HEADERS, timeout=30)
         resp.raise_for_status()
-        tables = pd.read_html(io.StringIO(resp.text))
-        df = tables[0]
-        tickers = {
-            str(sym).replace(".", "-"): str(name)
-            for sym, name in zip(df["Symbol"], df["Security"])
-        }
+        df = pd.read_html(io.StringIO(resp.text))[0]
+        tickers = {str(s).replace(".", "-"): str(n)
+                   for s, n in zip(df["Symbol"], df["Security"])}
         print(f"[INFO] S&P500リスト取得成功: {len(tickers)}銘柄")
         return tickers
     except Exception as e:
@@ -74,7 +90,6 @@ def get_us_tickers() -> dict:
 
 
 def get_jp_tickers() -> dict:
-    """tickers_jp.txt があれば優先 (1行1銘柄: '7203.T,トヨタ自動車')。"""
     path = "tickers_jp.txt"
     if os.path.exists(path):
         result = {}
@@ -84,131 +99,297 @@ def get_jp_tickers() -> dict:
                 if not line or line.startswith("#"):
                     continue
                 parts = line.split(",")
-                code = parts[0].strip()
-                name = parts[1].strip() if len(parts) > 1 else code
-                result[code] = name
+                result[parts[0].strip()] = (parts[1].strip()
+                                            if len(parts) > 1 else parts[0])
         print(f"[INFO] tickers_jp.txt から {len(result)}銘柄を読込")
         return result
     return JP_DEFAULT_TICKERS
 
 
+def get_jpx_universe(markets) -> dict:
+    """JPX公表の全上場銘柄リストから指定市場の内国株式を取得。"""
+    try:
+        resp = requests.get(JPX_URL, headers=UA_HEADERS, timeout=60)
+        resp.raise_for_status()
+        df = pd.read_excel(io.BytesIO(resp.content))
+        seg = df["市場・商品区分"].astype(str)
+        df = df[seg.str.contains("内国株式")]
+        df = df[df["市場・商品区分"].astype(str).apply(
+            lambda s: any(m in s for m in markets))]
+        result = {}
+        for code, name in zip(df["コード"], df["銘柄名"]):
+            code = str(code).strip()
+            if code.isdigit():
+                result[f"{code.zfill(4)}.T"] = str(name)
+        print(f"[INFO] JPXリスト取得: {'/'.join(markets)} {len(result)}銘柄")
+        return result
+    except Exception as e:
+        print(f"[WARN] JPXリスト取得失敗: {e}")
+        return {}
+
+
 # ---------------------------------------------------------------
-# スキャン処理
+# 価格・財務データ取得
 # ---------------------------------------------------------------
 
-def download_with_retry(symbols: list, retries: int = 3):
-    """yfinanceダウンロード。空振り時は待ってリトライ。"""
-    for attempt in range(1, retries + 1):
-        data = yf.download(
-            symbols, period="1y", interval="1d",
-            group_by="ticker", auto_adjust=False,
-            threads=True, progress=False,
-        )
-        if data is not None and not data.empty:
-            return data
-        print(f"[WARN] ダウンロード空振り (試行{attempt}/{retries})。20秒待機...")
-        time.sleep(20)
-    return None
+def bulk_price_summary(symbols: list, chunk: int = 200) -> dict:
+    """全銘柄の 終値/52週高値/52週安値 をチャンク分割で取得。"""
+    out = {}
+    for i in range(0, len(symbols), chunk):
+        part = symbols[i:i + chunk]
+        print(f"[INFO] 価格取得 {i + 1}-{i + len(part)}/{len(symbols)}")
+        try:
+            data = yf.download(part, period="1y", interval="1d",
+                               group_by="ticker", auto_adjust=False,
+                               threads=True, progress=False)
+        except Exception as e:
+            print(f"[WARN] チャンク取得失敗: {e}")
+            continue
+        if data is None or data.empty:
+            continue
+        for sym in part:
+            try:
+                df = (data[sym] if len(part) > 1 else data)
+                df = df.dropna(subset=["Close"])
+                if len(df) < 60:
+                    continue
+                out[sym] = {
+                    "close": float(df["Close"].iloc[-1]),
+                    "high52": float(df["High"].max()),
+                    "low52": float(df["Low"].min()),
+                }
+            except Exception:
+                continue
+        time.sleep(1)
+    print(f"[INFO] 価格データ取得完了: {len(out)}/{len(symbols)}銘柄")
+    return out
 
+
+def range_position(p: dict) -> float:
+    """52週レンジ内の現在位置 (0=安値, 1=高値)。"""
+    span = p["high52"] - p["low52"]
+    if span <= 0:
+        return 0.5
+    return (p["close"] - p["low52"]) / span
+
+
+def fetch_fundamentals(sym: str) -> dict:
+    """yfinanceから財務指標を取得。失敗時は空dict。"""
+    try:
+        info = yf.Ticker(sym).info
+        price = info.get("currentPrice") or info.get("regularMarketPrice")
+        div_rate = info.get("trailingAnnualDividendRate")
+        yld = None
+        if div_rate and price:
+            yld = float(div_rate) / float(price)
+        return {
+            "mcap": info.get("marketCap"),
+            "pbr": info.get("priceToBook"),
+            "per": info.get("trailingPE"),
+            "yld": yld,
+            "rev_g": info.get("revenueGrowth"),
+            "roe": info.get("returnOnEquity"),
+        }
+    except Exception:
+        return {}
+
+
+# ---------------------------------------------------------------
+# コマンド: scan / rank (v2と同じ)
+# ---------------------------------------------------------------
 
 def scan_universe(tickers: dict, market: str) -> list:
-    """52週高値を更新した銘柄を抽出して行リストで返す。"""
     if not tickers:
         print(f"[WARN] {market}: 銘柄リストが空のためスキップ")
         return []
     symbols = list(tickers.keys())
     print(f"[INFO] {market}: {len(symbols)}銘柄をダウンロード中...")
-    data = download_with_retry(symbols)
-    if data is None:
-        print(f"[ERROR] {market}: データ取得に失敗しました")
+    data = None
+    for attempt in range(1, 4):
+        data = yf.download(symbols, period="1y", interval="1d",
+                           group_by="ticker", auto_adjust=False,
+                           threads=True, progress=False)
+        if data is not None and not data.empty:
+            break
+        print(f"[WARN] 空振り (試行{attempt}/3)。20秒待機...")
+        time.sleep(20)
+    if data is None or data.empty:
+        print(f"[ERROR] {market}: データ取得に失敗")
         return []
 
-    rows = []
-    ok_count = 0
+    rows, ok = [], 0
     for sym in symbols:
         try:
-            df = data[sym].dropna(subset=["High"]) if len(symbols) > 1 else data.dropna(subset=["High"])
+            df = (data[sym] if len(symbols) > 1 else data)
+            df = df.dropna(subset=["High"])
             if len(df) < 30:
                 continue
-            ok_count += 1
+            ok += 1
             today = df.iloc[-1]
             past_max = df["High"].iloc[:-1].max()
             if today["High"] >= past_max:
-                prev_close = df["Close"].iloc[-2]
-                chg = (today["Close"] / prev_close - 1) * 100
+                close_v = float(today["Close"]) if pd.notna(today["Close"]) \
+                    else float(df["Close"].dropna().iloc[-1])
+                prev = df["Close"].dropna()
+                chg = ((close_v / float(prev.iloc[-2]) - 1) * 100
+                       if len(prev) >= 2 else None)
                 rows.append({
                     "date": df.index[-1].strftime("%Y-%m-%d"),
-                    "market": market,
-                    "ticker": sym,
-                    "name": tickers[sym],
+                    "market": market, "ticker": sym, "name": tickers[sym],
                     "high": round(float(today["High"]), 2),
-                    "close": round(float(today["Close"]), 2),
-                    "change_pct": round(float(chg), 2),
+                    "close": round(close_v, 2),
+                    "change_pct": round(chg, 2) if chg is not None else "",
                 })
         except Exception:
             continue
-    print(f"[INFO] {market}: 有効データ {ok_count}/{len(symbols)}銘柄, "
-          f"高値更新 {len(rows)}銘柄")
+    print(f"[INFO] {market}: 有効 {ok}/{len(symbols)}, 高値更新 {len(rows)}銘柄")
     return rows
 
 
-def write_last_run(summary: str):
-    """実行記録を必ず残す (結果ゼロでもコミット対象を作るため)。"""
+def write_note(filename: str, text: str):
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    with open(os.path.join(OUTPUT_DIR, "last_run.txt"), "w",
-              encoding="utf-8") as f:
-        f.write(f"last run (UTC): {datetime.utcnow().isoformat()}\n{summary}\n")
+    with open(os.path.join(OUTPUT_DIR, filename), "w", encoding="utf-8") as f:
+        f.write(f"last run (UTC): {datetime.utcnow().isoformat()}\n{text}\n")
 
 
 def cmd_scan():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    jp_rows = scan_universe(get_jp_tickers(), "JP")
-    us_rows = scan_universe(get_us_tickers(), "US")
-    rows = jp_rows + us_rows
-
-    summary = f"JP: {len(jp_rows)}件 / US: {len(us_rows)}件 の52週高値更新"
-    write_last_run(summary)
-
+    jp = scan_universe(get_jp_tickers(), "JP")
+    us = scan_universe(get_us_tickers(), "US")
+    rows = jp + us
+    write_note("last_run.txt", f"JP: {len(jp)}件 / US: {len(us)}件")
     if not rows:
         print("本日の52週高値更新銘柄はありませんでした(または取得失敗)。")
         return
-
-    df = pd.DataFrame(rows).sort_values(
-        ["market", "change_pct"], ascending=[True, False])
-    today_str = date.today().isoformat()
-    daily_path = os.path.join(OUTPUT_DIR, f"{today_str}_highs.csv")
-    df.to_csv(daily_path, index=False, encoding="utf-8-sig")
-
+    df = pd.DataFrame(rows).sort_values(["market", "ticker"])
+    daily = os.path.join(OUTPUT_DIR, f"{date.today().isoformat()}_highs.csv")
+    df.to_csv(daily, index=False, encoding="utf-8-sig")
     hist_path = os.path.join(OUTPUT_DIR, "history.csv")
     if os.path.exists(hist_path):
         hist = pd.read_csv(hist_path)
         df = pd.concat([hist, df]).drop_duplicates(subset=["date", "ticker"])
     df.to_csv(hist_path, index=False, encoding="utf-8-sig")
-
-    print(f"[DONE] {summary}。{daily_path} に保存しました。")
-    print(pd.DataFrame(rows).to_string(index=False))
+    print(f"[DONE] {daily} に保存 ({len(rows)}銘柄)")
 
 
 def cmd_rank():
     hist_path = os.path.join(OUTPUT_DIR, "history.csv")
     if not os.path.exists(hist_path):
-        print("履歴がまだありません。まず scan を実行してください。")
+        print("履歴がありません。先に scan を実行してください。")
         return
     hist = pd.read_csv(hist_path)
-    rank = (
-        hist.groupby(["market", "ticker", "name"])
-        .size().reset_index(name="更新回数")
-        .sort_values(["market", "更新回数"], ascending=[True, False])
-    )
-    print("=== 52週高値 更新回数ランキング ===")
-    print(rank.to_string(index=False))
+    rank = (hist.groupby(["market", "ticker", "name"]).size()
+            .reset_index(name="更新回数")
+            .sort_values(["market", "更新回数"], ascending=[True, False]))
     rank.to_csv(os.path.join(OUTPUT_DIR, "ranking.csv"),
                 index=False, encoding="utf-8-sig")
+    print(rank.to_string(index=False))
+
+
+# ---------------------------------------------------------------
+# コマンド: value_scan (中小型割安バリュー)
+# ---------------------------------------------------------------
+
+def cmd_value_scan():
+    universe = get_jpx_universe(("プライム", "スタンダード"))
+    if not universe:
+        write_note("value_last_run.txt", "JPXリスト取得失敗")
+        return
+    prices = bulk_price_summary(list(universe.keys()))
+    cands = [(s, range_position(p)) for s, p in prices.items()
+             if range_position(p) <= VALUE_POS_MAX]
+    cands.sort(key=lambda x: x[1])
+    cands = cands[:MAX_FUND_CALLS]
+    print(f"[INFO] 安値圏候補 {len(cands)}銘柄の財務指標を取得中...")
+
+    rows = []
+    for i, (sym, pos) in enumerate(cands, 1):
+        if i % 50 == 0:
+            print(f"[INFO] 財務取得 {i}/{len(cands)}")
+        f = fetch_fundamentals(sym)
+        mc, pbr, per, yld = f.get("mcap"), f.get("pbr"), f.get("per"), f.get("yld")
+        if not mc or not (VALUE_MCAP_MIN <= mc <= VALUE_MCAP_MAX):
+            continue
+        if not pbr or pbr >= VALUE_PBR_MAX:
+            continue
+        if not per or per <= 0 or per > VALUE_PER_MAX:
+            continue
+        if not yld or yld < VALUE_YIELD_MIN:
+            continue
+        rows.append({
+            "ticker": sym, "name": universe[sym],
+            "時価総額億円": round(mc / 1e8),
+            "PBR": round(pbr, 2), "PER": round(per, 1),
+            "配当利回り%": round(yld * 100, 2),
+            "52週位置%": round(pos * 100, 1),
+            "close": prices[sym]["close"],
+        })
+        time.sleep(0.3)
+
+    write_note("value_last_run.txt",
+               f"候補{len(cands)}件を精査 → 条件合致 {len(rows)}銘柄")
+    if not rows:
+        print("条件に合致する銘柄なし。条件を緩めるのも一案です。")
+        return
+    df = pd.DataFrame(rows).sort_values("PBR")
+    path = os.path.join(OUTPUT_DIR, f"value_{date.today().isoformat()}.csv")
+    df.to_csv(path, index=False, encoding="utf-8-sig")
+    print(f"[DONE] {path} に保存 ({len(rows)}銘柄)")
+    print(df.to_string(index=False))
+
+
+# ---------------------------------------------------------------
+# コマンド: growth_scan (テンバガー候補: 小型高成長)
+# ---------------------------------------------------------------
+
+def cmd_growth_scan():
+    universe = get_jpx_universe(("グロース", "スタンダード"))
+    if not universe:
+        write_note("growth_last_run.txt", "JPXリスト取得失敗")
+        return
+    prices = bulk_price_summary(list(universe.keys()))
+    cands = [(s, range_position(p)) for s, p in prices.items()
+             if range_position(p) >= GROWTH_POS_MIN]
+    cands.sort(key=lambda x: -x[1])
+    cands = cands[:MAX_FUND_CALLS]
+    print(f"[INFO] 上昇圏候補 {len(cands)}銘柄の財務指標を取得中...")
+
+    rows = []
+    for i, (sym, pos) in enumerate(cands, 1):
+        if i % 50 == 0:
+            print(f"[INFO] 財務取得 {i}/{len(cands)}")
+        f = fetch_fundamentals(sym)
+        mc, rev_g, roe = f.get("mcap"), f.get("rev_g"), f.get("roe")
+        if not mc or mc > GROWTH_MCAP_MAX:
+            continue
+        if rev_g is None or rev_g < GROWTH_REV_MIN:
+            continue
+        if roe is None or roe < GROWTH_ROE_MIN:
+            continue
+        rows.append({
+            "ticker": sym, "name": universe[sym],
+            "時価総額億円": round(mc / 1e8),
+            "売上成長%": round(rev_g * 100, 1),
+            "ROE%": round(roe * 100, 1),
+            "52週位置%": round(pos * 100, 1),
+            "close": prices[sym]["close"],
+        })
+        time.sleep(0.3)
+
+    write_note("growth_last_run.txt",
+               f"候補{len(cands)}件を精査 → 条件合致 {len(rows)}銘柄")
+    if not rows:
+        print("条件に合致する銘柄なし。条件を緩めるのも一案です。")
+        return
+    df = pd.DataFrame(rows).sort_values("売上成長%", ascending=False)
+    path = os.path.join(OUTPUT_DIR, f"growth_{date.today().isoformat()}.csv")
+    df.to_csv(path, index=False, encoding="utf-8-sig")
+    print(f"[DONE] {path} に保存 ({len(rows)}銘柄)")
+    print(df.to_string(index=False))
 
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "scan"
-    if cmd == "rank":
-        cmd_rank()
-    else:
-        cmd_scan()
+    {"rank": cmd_rank,
+     "value_scan": cmd_value_scan,
+     "growth_scan": cmd_growth_scan}.get(cmd, cmd_scan)()
