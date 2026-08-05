@@ -1,19 +1,4 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-08-03,US,AMZN,Amazon,287.16,,
-2026-08-03,US,AMP,Ameriprise Financial,553.82,,
-2026-08-03,US,BRK-B,Berkshire Hathaway,520.66,,
-2026-08-03,US,BMY,Bristol Myers Squibb,68.1,,
-2026-08-03,US,DVA,DaVita,247.49,,
-2026-08-03,US,DXCM,Dexcom,87.63,,
-2026-08-03,US,ETN,Eaton Corporation,438.76,,
-2026-08-03,US,EA,Electronic Arts,209.97,,
-2026-08-03,US,BEN,Franklin Resources,35.43,,
-2026-08-03,US,GRMN,Garmin,304.98,,
-2026-08-03,US,PFG,Principal Financial Group,115.71,,
-2026-08-03,US,RJF,Raymond James Financial,179.29,,
-2026-08-03,US,ROST,Ross Stores,257.0,,
-2026-08-03,US,SWK,Stanley Black & Decker,98.13,,
-2026-08-03,US,TGT,Target Corporation,150.07,,
 2026-08-05,JP,6861.T,キーエンス,87590.0,87380.0,5.4
 2026-08-04,US,AME,Ametek,257.4,254.05,4.22
 2026-08-04,US,AMP,Ameriprise Financial,557.11,553.58,0.27
