@@ -1,0 +1,43 @@
+name: value-growth-scan
+
+on:
+  schedule:
+    # 毎週土曜 9:00 JST (市場が閉まった週末にじっくり実行)
+    - cron: '0 0 * * 6'
+  workflow_dispatch:   # 手動実行ボタン
+
+permissions:
+  contents: write
+
+concurrency:
+  group: high52-scan
+  cancel-in-progress: false
+
+jobs:
+  value-growth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run value scan
+        run: python high52_scanner.py value_scan
+
+      - name: Run growth scan
+        run: python high52_scanner.py growth_scan
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add outputs/
+          git diff --cached --quiet || git commit -m "value/growth scan $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
