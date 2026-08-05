@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-52週高値スキャナー v3 (日米対応 + バリュー/グロース探索)
-========================================================
+52週高値スキャナー v4 (テクニカル指標付き)
+==========================================
+v3からの変更点:
+- value_scan / growth_scan の出力に以下のテクニカル列を追加
+    MA25乖離% : 25日移動平均からの乖離率 (+が上方乖離=過熱気味)
+    MA75乖離% : 75日移動平均からの乖離率 (中期トレンドの位置)
+    RSI14     : 14日RSI (70以上=買われすぎ, 30以下=売られすぎ)
+    出来高倍率 : 直近5日平均出来高 ÷ 過去60日平均 (1超=資金流入)
+
 コマンド:
   python high52_scanner.py scan         # 52週高値更新銘柄 (日米)
   python high52_scanner.py rank         # 高値更新回数ランキング
-  python high52_scanner.py value_scan   # 日本の中小型割安バリュー株
+  python high52_scanner.py value_scan   # 中小型割安バリュー株
   python high52_scanner.py growth_scan  # テンバガー候補 (小型高成長)
-
-value_scan の条件 (VALUE_* 定数で調整可):
-  時価総額100億〜3000億円 / PBR<1 / PER<=12 / 配当利回り>=3% /
-  株価が52週レンジ下位30%圏
-growth_scan の条件 (GROWTH_* 定数で調整可):
-  時価総額500億円以下 / 売上成長率>=20% / ROE>=8% /
-  株価が52週レンジ上位40%圏 (資金流入が始まっている小型成長株)
 """
 
 import io
@@ -36,19 +36,19 @@ JPX_URL = ("https://www.jpx.co.jp/markets/statistics-equities/misc/"
            "tvdivq0000001vg2-att/data_j.xls")
 
 # ---- スクリーニング条件 (自由に調整OK) ----
-VALUE_MCAP_MIN = 100e8        # 100億円
-VALUE_MCAP_MAX = 3000e8       # 3000億円
+VALUE_MCAP_MIN = 100e8
+VALUE_MCAP_MAX = 3000e8
 VALUE_PBR_MAX = 1.0
 VALUE_PER_MAX = 12.0
-VALUE_YIELD_MIN = 0.03        # 3%
-VALUE_POS_MAX = 0.30          # 52週レンジ下位30%
+VALUE_YIELD_MIN = 0.03
+VALUE_POS_MAX = 0.30
 
-GROWTH_MCAP_MAX = 500e8       # 500億円
-GROWTH_REV_MIN = 0.20         # 売上成長20%
-GROWTH_ROE_MIN = 0.08         # ROE8%
-GROWTH_POS_MIN = 0.60         # 52週レンジ上位40%圏
+GROWTH_MCAP_MAX = 500e8
+GROWTH_REV_MIN = 0.20
+GROWTH_ROE_MIN = 0.08
+GROWTH_POS_MIN = 0.60
 
-MAX_FUND_CALLS = 350          # 財務指標の取得件数上限 (実行時間の制御)
+MAX_FUND_CALLS = 350
 
 # ---------------------------------------------------------------
 # 銘柄ユニバース
@@ -107,7 +107,6 @@ def get_jp_tickers() -> dict:
 
 
 def get_jpx_universe(markets) -> dict:
-    """JPX公表の全上場銘柄リストから指定市場の内国株式を取得。"""
     try:
         resp = requests.get(JPX_URL, headers=UA_HEADERS, timeout=60)
         resp.raise_for_status()
@@ -129,11 +128,48 @@ def get_jpx_universe(markets) -> dict:
 
 
 # ---------------------------------------------------------------
-# 価格・財務データ取得
+# 価格・テクニカル・財務データ取得
 # ---------------------------------------------------------------
 
+def calc_rsi(close: pd.Series, period: int = 14):
+    """14日RSI (単純平均方式)。"""
+    diff = close.diff()
+    gain = diff.clip(lower=0).rolling(period).mean()
+    loss = (-diff.clip(upper=0)).rolling(period).mean()
+    last_gain = gain.iloc[-1]
+    last_loss = loss.iloc[-1]
+    if pd.isna(last_gain) or pd.isna(last_loss):
+        return None
+    if last_loss == 0:
+        return 100.0
+    rs = last_gain / last_loss
+    return float(100 - 100 / (1 + rs))
+
+
+def technicals(df: pd.DataFrame) -> dict:
+    """終値・出来高系列からテクニカル指標を計算。"""
+    close = df["Close"].dropna()
+    vol = df["Volume"].dropna() if "Volume" in df else pd.Series(dtype=float)
+    out = {"ma25_dev": None, "ma75_dev": None, "rsi14": None, "vol_ratio": None}
+    c = float(close.iloc[-1])
+    if len(close) >= 25:
+        ma25 = float(close.rolling(25).mean().iloc[-1])
+        out["ma25_dev"] = (c / ma25 - 1) * 100
+    if len(close) >= 75:
+        ma75 = float(close.rolling(75).mean().iloc[-1])
+        out["ma75_dev"] = (c / ma75 - 1) * 100
+    if len(close) >= 15:
+        out["rsi14"] = calc_rsi(close)
+    if len(vol) >= 60:
+        v5 = float(vol.tail(5).mean())
+        v60 = float(vol.tail(60).mean())
+        if v60 > 0:
+            out["vol_ratio"] = v5 / v60
+    return out
+
+
 def bulk_price_summary(symbols: list, chunk: int = 200) -> dict:
-    """全銘柄の 終値/52週高値/52週安値 をチャンク分割で取得。"""
+    """終値/52週高安値/テクニカル指標をチャンク分割で取得。"""
     out = {}
     for i in range(0, len(symbols), chunk):
         part = symbols[i:i + chunk]
@@ -153,11 +189,13 @@ def bulk_price_summary(symbols: list, chunk: int = 200) -> dict:
                 df = df.dropna(subset=["Close"])
                 if len(df) < 60:
                     continue
-                out[sym] = {
+                rec = {
                     "close": float(df["Close"].iloc[-1]),
                     "high52": float(df["High"].max()),
                     "low52": float(df["Low"].min()),
                 }
+                rec.update(technicals(df))
+                out[sym] = rec
             except Exception:
                 continue
         time.sleep(1)
@@ -166,7 +204,6 @@ def bulk_price_summary(symbols: list, chunk: int = 200) -> dict:
 
 
 def range_position(p: dict) -> float:
-    """52週レンジ内の現在位置 (0=安値, 1=高値)。"""
     span = p["high52"] - p["low52"]
     if span <= 0:
         return 0.5
@@ -174,7 +211,6 @@ def range_position(p: dict) -> float:
 
 
 def fetch_fundamentals(sym: str) -> dict:
-    """yfinanceから財務指標を取得。失敗時は空dict。"""
     try:
         info = yf.Ticker(sym).info
         price = info.get("currentPrice") or info.get("regularMarketPrice")
@@ -194,8 +230,20 @@ def fetch_fundamentals(sym: str) -> dict:
         return {}
 
 
+def tech_cols(p: dict) -> dict:
+    """出力用テクニカル列 (Noneは空欄)。"""
+    def r(v, n=1):
+        return round(v, n) if v is not None else ""
+    return {
+        "MA25乖離%": r(p.get("ma25_dev")),
+        "MA75乖離%": r(p.get("ma75_dev")),
+        "RSI14": r(p.get("rsi14")),
+        "出来高倍率": r(p.get("vol_ratio"), 2),
+    }
+
+
 # ---------------------------------------------------------------
-# コマンド: scan / rank (v2と同じ)
+# コマンド: scan / rank
 # ---------------------------------------------------------------
 
 def scan_universe(tickers: dict, market: str) -> list:
@@ -287,7 +335,7 @@ def cmd_rank():
 
 
 # ---------------------------------------------------------------
-# コマンド: value_scan (中小型割安バリュー)
+# コマンド: value_scan
 # ---------------------------------------------------------------
 
 def cmd_value_scan():
@@ -316,20 +364,22 @@ def cmd_value_scan():
             continue
         if not yld or yld < VALUE_YIELD_MIN:
             continue
-        rows.append({
+        row = {
             "ticker": sym, "name": universe[sym],
             "時価総額億円": round(mc / 1e8),
             "PBR": round(pbr, 2), "PER": round(per, 1),
             "配当利回り%": round(yld * 100, 2),
             "52週位置%": round(pos * 100, 1),
             "close": prices[sym]["close"],
-        })
+        }
+        row.update(tech_cols(prices[sym]))
+        rows.append(row)
         time.sleep(0.3)
 
     write_note("value_last_run.txt",
                f"候補{len(cands)}件を精査 → 条件合致 {len(rows)}銘柄")
     if not rows:
-        print("条件に合致する銘柄なし。条件を緩めるのも一案です。")
+        print("条件に合致する銘柄なし。")
         return
     df = pd.DataFrame(rows).sort_values("PBR")
     path = os.path.join(OUTPUT_DIR, f"value_{date.today().isoformat()}.csv")
@@ -339,7 +389,7 @@ def cmd_value_scan():
 
 
 # ---------------------------------------------------------------
-# コマンド: growth_scan (テンバガー候補: 小型高成長)
+# コマンド: growth_scan
 # ---------------------------------------------------------------
 
 def cmd_growth_scan():
@@ -366,20 +416,22 @@ def cmd_growth_scan():
             continue
         if roe is None or roe < GROWTH_ROE_MIN:
             continue
-        rows.append({
+        row = {
             "ticker": sym, "name": universe[sym],
             "時価総額億円": round(mc / 1e8),
             "売上成長%": round(rev_g * 100, 1),
             "ROE%": round(roe * 100, 1),
             "52週位置%": round(pos * 100, 1),
             "close": prices[sym]["close"],
-        })
+        }
+        row.update(tech_cols(prices[sym]))
+        rows.append(row)
         time.sleep(0.3)
 
     write_note("growth_last_run.txt",
                f"候補{len(cands)}件を精査 → 条件合致 {len(rows)}銘柄")
     if not rows:
-        print("条件に合致する銘柄なし。条件を緩めるのも一案です。")
+        print("条件に合致する銘柄なし。")
         return
     df = pd.DataFrame(rows).sort_values("売上成長%", ascending=False)
     path = os.path.join(OUTPUT_DIR, f"growth_{date.today().isoformat()}.csv")
