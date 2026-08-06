@@ -1,35 +1,50 @@
 ﻿market,ticker,name,更新回数
-JP,6861.T,キーエンス,1
-US,AMP,Ameriprise Financial,2
-US,BEN,Franklin Resources,2
+JP,6861.T,キーエンス,2
+US,AMP,Ameriprise Financial,3
+US,BEN,Franklin Resources,3
+US,ETN,Eaton Corporation,3
+US,RJF,Raymond James Financial,3
+US,SWK,Stanley Black & Decker,3
+US,AME,Ametek,2
+US,ANET,Arista Networks,2
+US,BAC,Bank of America,2
+US,CPAY,Corpay,2
+US,DDOG,Datadog,2
+US,DELL,Dell Technologies,2
 US,DXCM,Dexcom,2
 US,EA,Electronic Arts,2
-US,ETN,Eaton Corporation,2
+US,EXPE,Expedia Group,2
 US,GRMN,Garmin,2
-US,RJF,Raymond James Financial,2
-US,SWK,Stanley Black & Decker,2
-US,AME,Ametek,1
+US,IVZ,Invesco,2
+US,JCI,Johnson Controls,2
+US,NDSN,Nordson Corporation,2
+US,NUE,Nucor,2
+US,PFG,Principal Financial Group,2
+US,WSM,"Williams-Sonoma, Inc.",2
+US,XYZ,"Block, Inc.",2
+US,ZBRA,Zebra Technologies,2
+US,AIZ,Assurant,1
+US,AMGN,Amgen,1
 US,AMZN,Amazon,1
-US,ANET,Arista Networks,1
-US,BAC,Bank of America,1
 US,BMY,Bristol Myers Squibb,1
 US,BRK-B,Berkshire Hathaway,1
-US,CPAY,Corpay,1
-US,DDOG,Datadog,1
-US,DELL,Dell Technologies,1
+US,CRL,Charles River Laboratories,1
+US,CRWD,CrowdStrike,1
 US,DVA,DaVita,1
-US,EXPE,Expedia Group,1
+US,EXPD,Expeditors International,1
+US,FTNT,Fortinet,1
+US,GE,GE Aerospace,1
+US,GPN,Global Payments,1
 US,HSIC,Henry Schein,1
-US,IVZ,Invesco,1
-US,JCI,Johnson Controls,1
+US,IFF,International Flavors & Fragrances,1
 US,JPM,JPMorgan Chase,1
-US,NDSN,Nordson Corporation,1
 US,NTAP,NetApp,1
-US,NUE,Nucor,1
-US,PFG,Principal Financial Group,1
+US,PANW,Palo Alto Networks,1
+US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
+US,RTX,RTX Corporation,1
+US,SCHW,Charles Schwab Corporation,1
+US,SNA,Snap-on,1
+US,TDY,Teledyne Technologies,1
 US,TGT,Target Corporation,1
 US,USB,U.S. Bancorp,1
-US,WSM,"Williams-Sonoma, Inc.",1
-US,XYZ,"Block, Inc.",1
-US,ZBRA,Zebra Technologies,1
