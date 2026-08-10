@@ -48,6 +48,8 @@ GROWTH_REV_MIN = 0.20
 GROWTH_ROE_MIN = 0.08
 GROWTH_POS_MIN = 0.60
 
+US_GROWTH_MCAP_MAX = 5e9      # 50億ドル以下 (S&P600の小型圏)
+
 MAX_FUND_CALLS = 350
 
 # ---------------------------------------------------------------
@@ -86,6 +88,33 @@ def get_us_tickers() -> dict:
         return tickers
     except Exception as e:
         print(f"[WARN] S&P500リスト取得に失敗: {e}")
+        return {}
+
+
+def get_sp600_tickers() -> dict:
+    """S&P600 (米国小型株指数) 構成銘柄をWikipediaから取得。"""
+    url = "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies"
+    try:
+        resp = requests.get(url, headers=UA_HEADERS, timeout=30)
+        resp.raise_for_status()
+        tables = pd.read_html(io.StringIO(resp.text))
+        df = None
+        for t in tables:
+            cols = [str(c) for c in t.columns]
+            if any("Symbol" in c for c in cols):
+                df = t
+                break
+        if df is None:
+            raise ValueError("Symbol列が見つかりません")
+        sym_col = [c for c in df.columns if "Symbol" in str(c)][0]
+        name_col = [c for c in df.columns
+                    if str(c) in ("Company", "Security")][0]
+        tickers = {str(s).replace(".", "-"): str(n)
+                   for s, n in zip(df[sym_col], df[name_col])}
+        print(f"[INFO] S&P600リスト取得成功: {len(tickers)}銘柄")
+        return tickers
+    except Exception as e:
+        print(f"[WARN] S&P600リスト取得に失敗: {e}")
         return {}
 
 
@@ -440,8 +469,61 @@ def cmd_growth_scan():
     print(df.to_string(index=False))
 
 
+# ---------------------------------------------------------------
+# コマンド: us_growth_scan (米国テンバガー候補: S&P600小型高成長)
+# ---------------------------------------------------------------
+
+def cmd_us_growth_scan():
+    universe = get_sp600_tickers()
+    if not universe:
+        write_note("us_growth_last_run.txt", "S&P600リスト取得失敗")
+        return
+    prices = bulk_price_summary(list(universe.keys()))
+    cands = [(s, range_position(p)) for s, p in prices.items()
+             if range_position(p) >= GROWTH_POS_MIN]
+    cands.sort(key=lambda x: -x[1])
+    cands = cands[:MAX_FUND_CALLS]
+    print(f"[INFO] 上昇圏候補 {len(cands)}銘柄の財務指標を取得中...")
+
+    rows = []
+    for i, (sym, pos) in enumerate(cands, 1):
+        if i % 50 == 0:
+            print(f"[INFO] 財務取得 {i}/{len(cands)}")
+        f = fetch_fundamentals(sym)
+        mc, rev_g, roe = f.get("mcap"), f.get("rev_g"), f.get("roe")
+        if not mc or mc > US_GROWTH_MCAP_MAX:
+            continue
+        if rev_g is None or rev_g < GROWTH_REV_MIN:
+            continue
+        if roe is None or roe < GROWTH_ROE_MIN:
+            continue
+        row = {
+            "ticker": sym, "name": universe[sym],
+            "時価総額億ドル": round(mc / 1e8, 1),
+            "売上成長%": round(rev_g * 100, 1),
+            "ROE%": round(roe * 100, 1),
+            "52週位置%": round(pos * 100, 1),
+            "close": prices[sym]["close"],
+        }
+        row.update(tech_cols(prices[sym]))
+        rows.append(row)
+        time.sleep(0.3)
+
+    write_note("us_growth_last_run.txt",
+               f"候補{len(cands)}件を精査 → 条件合致 {len(rows)}銘柄")
+    if not rows:
+        print("条件に合致する銘柄なし。")
+        return
+    df = pd.DataFrame(rows).sort_values("売上成長%", ascending=False)
+    path = os.path.join(OUTPUT_DIR, f"us_growth_{date.today().isoformat()}.csv")
+    df.to_csv(path, index=False, encoding="utf-8-sig")
+    print(f"[DONE] {path} に保存 ({len(rows)}銘柄)")
+    print(df.to_string(index=False))
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "scan"
     {"rank": cmd_rank,
      "value_scan": cmd_value_scan,
-     "growth_scan": cmd_growth_scan}.get(cmd, cmd_scan)()
+     "growth_scan": cmd_growth_scan,
+     "us_growth_scan": cmd_us_growth_scan}.get(cmd, cmd_scan)()
