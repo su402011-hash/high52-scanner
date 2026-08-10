@@ -32,6 +32,9 @@ jobs:
 
       - name: Run growth scan
         run: python high52_scanner.py growth_scan
+      - name: Run US growth scan
+        run: python high52_scanner.py us_growth_scan
+
 
       - name: Commit results
         run: |
