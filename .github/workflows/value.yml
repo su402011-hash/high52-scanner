@@ -40,6 +40,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          ls -t outputs/value_*.csv | head -1 | xargs -I{} cp {} outputs/latest_value.csv || true
+          ls -t outputs/growth_*.csv | head -1 | xargs -I{} cp {} outputs/latest_growth.csv || true
+          ls -t outputs/us_growth_*.csv | head -1 | xargs -I{} cp {} outputs/latest_us_growth.csv || true
           git add outputs/
           git diff --cached --quiet || git commit -m "value/growth scan $(date -u +'%Y-%m-%d')"
           git pull --rebase origin main
