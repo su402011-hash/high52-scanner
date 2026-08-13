@@ -1,21 +1,22 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-08-12,JP,6098.T,リクルートHD,16950.0,16660.0,3.06
+2026-08-13,JP,6098.T,リクルートHD,16980.0,16790.0,0.78
+2026-08-13,JP,6857.T,アドバンテスト,37040.0,35940.0,4.02
 2026-08-12,US,AME,Ametek,259.99,258.52,0.87
 2026-08-12,US,BAC,Bank of America,64.95,64.81,1.27
 2026-08-12,US,CPAY,Corpay,412.24,409.68,0.87
-2026-08-12,US,CRL,Charles River Laboratories,287.95,284.37,0.84
+2026-08-12,US,CRL,Charles River Laboratories,288.02,284.37,0.84
 2026-08-12,US,DRI,Darden Restaurants,228.73,227.68,4.01
 2026-08-12,US,DXCM,Dexcom,91.04,90.8,1.42
-2026-08-12,US,EMR,Emerson Electric,166.24,163.8,-0.35
-2026-08-12,US,ETN,Eaton Corporation,477.75,459.96,0.15
+2026-08-12,US,EMR,Emerson Electric,166.35,163.8,-0.35
+2026-08-12,US,ETN,Eaton Corporation,478.0,459.96,0.15
 2026-08-12,US,JPM,JPMorgan Chase,366.09,365.18,0.87
-2026-08-12,US,MPC,Marathon Petroleum,348.32,348.25,3.52
+2026-08-12,US,MPC,Marathon Petroleum,348.35,348.25,3.52
 2026-08-12,US,NTAP,NetApp,202.32,202.05,1.8
 2026-08-12,US,PANW,Palo Alto Networks,389.25,387.01,0.84
-2026-08-12,US,PKG,Packaging Corporation of America,258.98,256.31,-0.44
-2026-08-12,US,PSX,Phillips 66,226.56,225.58,0.54
+2026-08-12,US,PKG,Packaging Corporation of America,259.0,256.31,-0.44
+2026-08-12,US,PSX,Phillips 66,226.6,225.58,0.54
 2026-08-12,US,SCHW,Charles Schwab Corporation,109.66,109.34,1.52
 2026-08-12,US,USB,U.S. Bancorp,65.1,65.02,1.14
-2026-08-12,US,VLO,Valero Energy,330.95,330.21,1.94
+2026-08-12,US,VLO,Valero Energy,330.96,330.21,1.94
 2026-08-12,US,WAT,Waters Corporation,416.62,416.15,0.28
-2026-08-12,US,ZBRA,Zebra Technologies,386.22,378.37,-1.22
+2026-08-12,US,ZBRA,Zebra Technologies,386.23,378.37,-1.22
