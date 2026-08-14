@@ -6,75 +6,77 @@ JP,5401.T,日本製鉄,1
 JP,6752.T,パナソニックHD,1
 JP,8411.T,みずほFG,1
 JP,9101.T,日本郵船,1
+US,AMP,Ameriprise Financial,7
 US,BAC,Bank of America,7
-US,AMP,Ameriprise Financial,6
-US,DXCM,Dexcom,6
+US,DXCM,Dexcom,7
 US,ETN,Eaton Corporation,6
+US,SCHW,Charles Schwab Corporation,6
 US,SWK,Stanley Black & Decker,6
 US,CPAY,Corpay,5
 US,CRL,Charles River Laboratories,5
 US,LH,Labcorp,5
 US,PANW,Palo Alto Networks,5
-US,SCHW,Charles Schwab Corporation,5
 US,ZBRA,Zebra Technologies,5
 US,AME,Ametek,4
+US,EXPE,Expedia Group,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
+US,IVZ,Invesco,4
 US,JPM,JPMorgan Chase,4
+US,MPC,Marathon Petroleum,4
 US,NTAP,NetApp,4
+US,PSX,Phillips 66,4
 US,RJF,Raymond James Financial,4
 US,TGT,Target Corporation,4
 US,USB,U.S. Bancorp,4
+US,VLO,Valero Energy,4
 US,ABNB,Airbnb,3
 US,AMGN,Amgen,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
+US,CRWD,CrowdStrike,3
 US,DELL,Dell Technologies,3
-US,EXPE,Expedia Group,3
 US,HPQ,HP Inc.,3
-US,IVZ,Invesco,3
-US,MPC,Marathon Petroleum,3
 US,NDSN,Nordson Corporation,3
 US,PFG,Principal Financial Group,3
-US,PSX,Phillips 66,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
-US,VLO,Valero Energy,3
 US,WAT,Waters Corporation,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,AIZ,Assurant,2
 US,ANET,Arista Networks,2
 US,CAH,Cardinal Health,2
-US,CRWD,CrowdStrike,2
 US,DDOG,Datadog,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
+US,EXPD,Expeditors International,2
 US,GE,GE Aerospace,2
 US,GPN,Global Payments,2
 US,JCI,Johnson Controls,2
+US,LYV,Live Nation Entertainment,2
+US,MRK,Merck & Co.,2
 US,NUE,Nucor,2
+US,OMC,Omnicom Group,2
 US,PKG,Packaging Corporation of America,2
 US,SNA,Snap-on,2
+US,TECH,Bio-Techne,2
 US,TPR,"Tapestry, Inc.",2
 US,XYZ,"Block, Inc.",2
 US,AMZN,Amazon,1
 US,BMY,Bristol Myers Squibb,1
+US,CFG,Citizens Financial Group,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
-US,EXPD,Expeditors International,1
 US,FTNT,Fortinet,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IFF,International Flavors & Fragrances,1
-US,LYV,Live Nation Entertainment,1
 US,MET,MetLife,1
 US,MNST,Monster Beverage,1
-US,MRK,Merck & Co.,1
 US,MSI,Motorola Solutions,1
 US,MTB,M&T Bank,1
 US,NTRS,Northern Trust,1
 US,NWS,News Corp (Class B),1
-US,OMC,Omnicom Group,1
 US,PH,Parker Hannifin,1
 US,PNC,PNC Financial Services,1
 US,PRU,Prudential Financial,1
@@ -82,7 +84,6 @@ US,ROST,Ross Stores,1
 US,RVTY,Revvity,1
 US,SBUX,Starbucks,1
 US,SOLV,Solventum,1
-US,TECH,Bio-Techne,1
 US,URI,United Rentals,1
 US,VRTX,Vertex Pharmaceuticals,1
 US,VTRS,Viatris,1
