@@ -5,6 +5,7 @@ JP,6857.T,アドバンテスト,2
 JP,6861.T,キーエンス,2
 JP,5401.T,日本製鉄,1
 JP,6752.T,パナソニックHD,1
+JP,7267.T,ホンダ,1
 JP,8411.T,みずほFG,1
 US,BAC,Bank of America,8
 US,CRL,Charles River Laboratories,8
@@ -14,13 +15,13 @@ US,AMP,Ameriprise Financial,7
 US,DXCM,Dexcom,7
 US,PSX,Phillips 66,7
 US,ETN,Eaton Corporation,6
+US,IVZ,Invesco,6
 US,MPC,Marathon Petroleum,6
 US,SWK,Stanley Black & Decker,6
 US,VLO,Valero Energy,6
 US,AMGN,Amgen,5
 US,CPAY,Corpay,5
 US,EXPE,Expedia Group,5
-US,IVZ,Invesco,5
 US,MRK,Merck & Co.,5
 US,PANW,Palo Alto Networks,5
 US,TGT,Target Corporation,5
@@ -60,6 +61,7 @@ US,JCI,Johnson Controls,2
 US,LYV,Live Nation Entertainment,2
 US,MTB,M&T Bank,2
 US,NUE,Nucor,2
+US,OKE,Oneok,2
 US,OMC,Omnicom Group,2
 US,PKG,Packaging Corporation of America,2
 US,PNC,PNC Financial Services,2
@@ -87,7 +89,6 @@ US,MRNA,Moderna,1
 US,MSI,Motorola Solutions,1
 US,NTRS,Northern Trust,1
 US,NWS,News Corp (Class B),1
-US,OKE,Oneok,1
 US,PH,Parker Hannifin,1
 US,PRU,Prudential Financial,1
 US,REGN,Regeneron Pharmaceuticals,1
