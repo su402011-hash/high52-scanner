@@ -7,18 +7,18 @@ JP,5401.T,日本製鉄,1
 JP,6752.T,パナソニックHD,1
 JP,7267.T,ホンダ,1
 JP,8411.T,みずほFG,1
+US,CRL,Charles River Laboratories,9
+US,LH,Labcorp,9
 US,BAC,Bank of America,8
-US,CRL,Charles River Laboratories,8
-US,LH,Labcorp,8
+US,PSX,Phillips 66,8
 US,SCHW,Charles Schwab Corporation,8
 US,AMP,Ameriprise Financial,7
 US,DXCM,Dexcom,7
-US,PSX,Phillips 66,7
+US,MPC,Marathon Petroleum,7
+US,VLO,Valero Energy,7
 US,ETN,Eaton Corporation,6
 US,IVZ,Invesco,6
-US,MPC,Marathon Petroleum,6
 US,SWK,Stanley Black & Decker,6
-US,VLO,Valero Energy,6
 US,AMGN,Amgen,5
 US,CPAY,Corpay,5
 US,EXPE,Expedia Group,5
@@ -32,27 +32,30 @@ US,AME,Ametek,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
+US,NDSN,Nordson Corporation,4
 US,NTAP,NetApp,4
 US,RJF,Raymond James Financial,4
+US,WAT,Waters Corporation,4
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,CRWD,CrowdStrike,3
 US,DELL,Dell Technologies,3
 US,EXPD,Expeditors International,3
 US,HPQ,HP Inc.,3
-US,NDSN,Nordson Corporation,3
 US,PFG,Principal Financial Group,3
 US,RTX,RTX Corporation,3
+US,RVTY,Revvity,3
 US,TDY,Teledyne Technologies,3
 US,TECH,Bio-Techne,3
-US,WAT,Waters Corporation,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,AIZ,Assurant,2
 US,ANET,Arista Networks,2
+US,BDX,Becton Dickinson,2
 US,BMY,Bristol Myers Squibb,2
 US,CAH,Cardinal Health,2
 US,CFG,Citizens Financial Group,2
 US,DDOG,Datadog,2
+US,DGX,Quest Diagnostics,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,GE,GE Aerospace,2
@@ -65,23 +68,26 @@ US,OKE,Oneok,2
 US,OMC,Omnicom Group,2
 US,PKG,Packaging Corporation of America,2
 US,PNC,PNC Financial Services,2
-US,RVTY,Revvity,2
 US,SNA,Snap-on,2
 US,TPR,"Tapestry, Inc.",2
+US,TRGP,Targa Resources,2
 US,VRTX,Vertex Pharmaceuticals,2
 US,XYZ,"Block, Inc.",2
 US,AMZN,Amazon,1
-US,BDX,Becton Dickinson,1
 US,BIIB,Biogen,1
 US,BNY,BNY Mellon,1
-US,DGX,Quest Diagnostics,1
+US,COP,ConocoPhillips,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
+US,EOG,EOG Resources,1
+US,FANG,Diamondback Energy,1
 US,FTNT,Fortinet,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IFF,International Flavors & Fragrances,1
+US,IQV,IQVIA,1
 US,JNJ,Johnson & Johnson,1
+US,KO,Coca-Cola Company (The),1
 US,LLY,Lilly (Eli),1
 US,MET,MetLife,1
 US,MNST,Monster Beverage,1
@@ -96,6 +102,5 @@ US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
 US,SOLV,Solventum,1
 US,STT,State Street Corporation,1
-US,TRGP,Targa Resources,1
 US,URI,United Rentals,1
 US,VTRS,Viatris,1
