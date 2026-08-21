@@ -34,6 +34,9 @@ jobs:
         run: python high52_scanner.py growth_scan
       - name: Run US growth scan
         run: python high52_scanner.py us_growth_scan
+      - name: Run setup scan
+        run: python high52_scanner.py setup_scan
+
 
 
       - name: Commit results
@@ -44,6 +47,7 @@ jobs:
           ls -t outputs/growth_*.csv | head -1 | xargs -I{} cp {} outputs/latest_growth.csv || true
           ls -t outputs/us_growth_*.csv | head -1 | xargs -I{} cp {} outputs/latest_us_growth.csv || true
           git add outputs/
+          ls -t outputs/setup_*.csv | head -1 | xargs -I{} cp {} outputs/latest_setup.csv || true
           git diff --cached --quiet || git commit -m "value/growth scan $(date -u +'%Y-%m-%d')"
           git pull --rebase origin main
           git push
