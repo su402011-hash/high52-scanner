@@ -8,29 +8,30 @@ JP,9432.T,NTT,2
 JP,5401.T,日本製鉄,1
 JP,6752.T,パナソニックHD,1
 JP,8411.T,みずほFG,1
+US,LH,Labcorp,10
+US,SCHW,Charles Schwab Corporation,10
 US,CRL,Charles River Laboratories,9
-US,LH,Labcorp,9
-US,SCHW,Charles Schwab Corporation,9
+US,DXCM,Dexcom,9
 US,BAC,Bank of America,8
-US,DXCM,Dexcom,8
 US,PSX,Phillips 66,8
+US,VLO,Valero Energy,8
 US,AMP,Ameriprise Financial,7
 US,MPC,Marathon Petroleum,7
-US,VLO,Valero Energy,7
+US,TGT,Target Corporation,7
+US,AMGN,Amgen,6
 US,ETN,Eaton Corporation,6
+US,EXPE,Expedia Group,6
 US,IVZ,Invesco,6
 US,MRK,Merck & Co.,6
 US,SWK,Stanley Black & Decker,6
-US,TGT,Target Corporation,6
-US,AMGN,Amgen,5
+US,ABNB,Airbnb,5
 US,CPAY,Corpay,5
-US,EXPE,Expedia Group,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,USB,U.S. Bancorp,5
 US,ZBRA,Zebra Technologies,5
-US,ABNB,Airbnb,4
 US,AME,Ametek,4
+US,BDX,Becton Dickinson,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
@@ -38,13 +39,16 @@ US,NTAP,NetApp,4
 US,RJF,Raymond James Financial,4
 US,RVTY,Revvity,4
 US,WAT,Waters Corporation,4
-US,BDX,Becton Dickinson,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,CRWD,CrowdStrike,3
 US,DELL,Dell Technologies,3
+US,DGX,Quest Diagnostics,3
 US,EXPD,Expeditors International,3
+US,GPN,Global Payments,3
 US,HPQ,HP Inc.,3
+US,IQV,IQVIA,3
+US,OMC,Omnicom Group,3
 US,PFG,Principal Financial Group,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
@@ -59,22 +63,21 @@ US,CAH,Cardinal Health,2
 US,CFG,Citizens Financial Group,2
 US,COP,ConocoPhillips,2
 US,DDOG,Datadog,2
-US,DGX,Quest Diagnostics,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
+US,FCX,Freeport-McMoRan,2
 US,GE,GE Aerospace,2
-US,GPN,Global Payments,2
-US,IQV,IQVIA,2
 US,JCI,Johnson Controls,2
+US,KO,Coca-Cola Company (The),2
 US,LYV,Live Nation Entertainment,2
 US,MTB,M&T Bank,2
 US,NUE,Nucor,2
 US,OKE,Oneok,2
-US,OMC,Omnicom Group,2
 US,PKG,Packaging Corporation of America,2
 US,PNC,PNC Financial Services,2
 US,REGN,Regeneron Pharmaceuticals,2
 US,SNA,Snap-on,2
+US,SOLV,Solventum,2
 US,TPR,"Tapestry, Inc.",2
 US,XYZ,"Block, Inc.",2
 US,A,Agilent Technologies,1
@@ -85,13 +88,11 @@ US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,EOG,EOG Resources,1
 US,FANG,Diamondback Energy,1
-US,FCX,Freeport-McMoRan,1
 US,FTNT,Fortinet,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IFF,International Flavors & Fragrances,1
 US,JNJ,Johnson & Johnson,1
-US,KO,Coca-Cola Company (The),1
 US,LLY,Lilly (Eli),1
 US,MET,MetLife,1
 US,MNST,Monster Beverage,1
@@ -103,7 +104,7 @@ US,PH,Parker Hannifin,1
 US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
-US,SOLV,Solventum,1
 US,STT,State Street Corporation,1
 US,URI,United Rentals,1
+US,V,Visa Inc.,1
 US,VTRS,Viatris,1
