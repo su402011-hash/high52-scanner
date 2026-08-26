@@ -1,7 +1,7 @@
 ﻿market,ticker,name,更新回数
 JP,9101.T,日本郵船,7
-JP,6098.T,リクルートHD,3
-JP,9432.T,NTT,3
+JP,6098.T,リクルートHD,4
+JP,9432.T,NTT,4
 JP,6857.T,アドバンテスト,2
 JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
@@ -108,5 +108,6 @@ US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
 US,STT,State Street Corporation,1
+US,TMO,Thermo Fisher Scientific,1
 US,URI,United Rentals,1
 US,VTRS,Viatris,1
