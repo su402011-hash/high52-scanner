@@ -14,21 +14,22 @@ US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
 US,BAC,Bank of America,8
 US,IVZ,Invesco,8
+US,MPC,Marathon Petroleum,8
 US,PSX,Phillips 66,8
 US,VLO,Valero Energy,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
-US,MPC,Marathon Petroleum,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
+US,RVTY,Revvity,6
 US,SWK,Stanley Black & Decker,6
 US,ABNB,Airbnb,5
 US,CPAY,Corpay,5
+US,EXPD,Expeditors International,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
-US,RVTY,Revvity,5
 US,USB,U.S. Bancorp,5
 US,WAT,Waters Corporation,5
 US,ZBRA,Zebra Technologies,5
@@ -36,7 +37,6 @@ US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
 US,CRWD,CrowdStrike,4
 US,DGX,Quest Diagnostics,4
-US,EXPD,Expeditors International,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,IQV,IQVIA,4
@@ -92,6 +92,7 @@ US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,EOG,EOG Resources,1
 US,FANG,Diamondback Energy,1
+US,GEN,Gen Digital,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
