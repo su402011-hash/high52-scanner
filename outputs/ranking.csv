@@ -13,10 +13,10 @@ US,CRL,Charles River Laboratories,11
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
 US,IVZ,Invesco,9
+US,MPC,Marathon Petroleum,9
+US,PSX,Phillips 66,9
+US,VLO,Valero Energy,9
 US,BAC,Bank of America,8
-US,MPC,Marathon Petroleum,8
-US,PSX,Phillips 66,8
-US,VLO,Valero Energy,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
 US,MRK,Merck & Co.,7
@@ -27,6 +27,7 @@ US,RVTY,Revvity,6
 US,SWK,Stanley Black & Decker,6
 US,ABNB,Airbnb,5
 US,CPAY,Corpay,5
+US,CRWD,CrowdStrike,5
 US,EXPD,Expeditors International,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
@@ -35,7 +36,6 @@ US,WAT,Waters Corporation,5
 US,ZBRA,Zebra Technologies,5
 US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
-US,CRWD,CrowdStrike,4
 US,DGX,Quest Diagnostics,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
@@ -111,6 +111,7 @@ US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
+US,SLB,Schlumberger,1
 US,TMO,Thermo Fisher Scientific,1
 US,URI,United Rentals,1
 US,VTRS,Viatris,1
