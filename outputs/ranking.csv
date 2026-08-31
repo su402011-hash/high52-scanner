@@ -1,7 +1,7 @@
 ﻿market,ticker,name,更新回数
 JP,9101.T,日本郵船,7
-JP,6098.T,リクルートHD,5
-JP,9432.T,NTT,4
+JP,6098.T,リクルートHD,6
+JP,9432.T,NTT,5
 JP,6857.T,アドバンテスト,2
 JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
@@ -12,8 +12,8 @@ US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
+US,IVZ,Invesco,9
 US,BAC,Bank of America,8
-US,IVZ,Invesco,8
 US,MPC,Marathon Petroleum,8
 US,PSX,Phillips 66,8
 US,VLO,Valero Energy,8
