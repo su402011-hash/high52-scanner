@@ -1,7 +1,7 @@
 ﻿market,ticker,name,更新回数
 JP,9101.T,日本郵船,7
 JP,6098.T,リクルートHD,6
-JP,9432.T,NTT,5
+JP,9432.T,NTT,6
 JP,6857.T,アドバンテスト,2
 JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
@@ -72,6 +72,7 @@ US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,FTNT,Fortinet,2
 US,GE,GE Aerospace,2
+US,GEN,Gen Digital,2
 US,JCI,Johnson Controls,2
 US,KO,Coca-Cola Company (The),2
 US,LYV,Live Nation Entertainment,2
@@ -92,7 +93,6 @@ US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,EOG,EOG Resources,1
 US,FANG,Diamondback Energy,1
-US,GEN,Gen Digital,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
