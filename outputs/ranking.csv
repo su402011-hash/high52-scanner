@@ -20,18 +20,20 @@ US,BAC,Bank of America,8
 US,RVTY,Revvity,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
+US,IQV,IQVIA,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
-US,IQV,IQVIA,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ABNB,Airbnb,5
 US,COP,ConocoPhillips,5
 US,CRWD,CrowdStrike,5
+US,DELL,Dell Technologies,5
 US,EXPD,Expeditors International,5
+US,HPQ,HP Inc.,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,USB,U.S. Bancorp,5
@@ -40,11 +42,9 @@ US,ZBRA,Zebra Technologies,5
 US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
 US,BIIB,Biogen,4
-US,DELL,Dell Technologies,4
 US,DGX,Quest Diagnostics,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
-US,HPQ,HP Inc.,4
 US,JPM,JPMorgan Chase,4
 US,NTAP,NetApp,4
 US,PFG,Principal Financial Group,4
@@ -70,6 +70,7 @@ US,A,Agilent Technologies,2
 US,AIZ,Assurant,2
 US,ANET,Arista Networks,2
 US,BMY,Bristol Myers Squibb,2
+US,BNY,BNY Mellon,2
 US,CAH,Cardinal Health,2
 US,CFG,Citizens Financial Group,2
 US,DDOG,Datadog,2
@@ -92,7 +93,6 @@ US,STT,State Street Corporation,2
 US,TPR,"Tapestry, Inc.",2
 US,V,Visa Inc.,2
 US,AMZN,Amazon,1
-US,BNY,BNY Mellon,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,EOG,EOG Resources,1
