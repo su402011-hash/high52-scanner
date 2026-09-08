@@ -36,7 +36,7 @@ UA_HEADERS = {
                    "Chrome/126.0 Safari/537.36")
 }
 JPX_URL = ("https://www.jpx.co.jp/markets/statistics-equities/misc/"
-           "tvdivq0000001vg2-att/data_j.xls")
+           "tvdivq0000001vg2-att/data_j.xlsx")
 
 # ---- スクリーニング条件 ----
 VALUE_MCAP_MIN = 100e8
