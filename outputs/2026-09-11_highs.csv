@@ -1,10 +1,10 @@
 ﻿date,market,ticker,name,high,close,change_pct
 2026-09-11,JP,9432.T,NTT,176.4,175.7,0.29
-2026-09-10,US,ADM,Archer Daniels Midland,88.75,86.91,0.42
-2026-09-10,US,APA,APA Corporation,46.1,44.53,-0.69
-2026-09-10,US,COP,ConocoPhillips,138.89,137.04,0.37
-2026-09-10,US,CVX,Chevron Corporation,217.4,212.76,-0.49
-2026-09-10,US,HPQ,HP Inc.,33.17,32.73,1.05
-2026-09-10,US,MPC,Marathon Petroleum,405.13,392.42,-1.76
-2026-09-10,US,PSX,Phillips 66,263.76,258.51,-0.87
-2026-09-10,US,VLO,Valero Energy,393.54,385.43,-0.91
+2026-09-11,US,BBY,Best Buy,91.37,90.8,3.08
+2026-09-11,US,DELL,Dell Technologies,567.75,567.29,11.98
+2026-09-11,US,EXPD,Expeditors International,193.15,192.6,1.73
+2026-09-11,US,HPQ,HP Inc.,36.22,35.48,8.4
+2026-09-11,US,MPC,Marathon Petroleum,409.11,395.93,0.89
+2026-09-11,US,PSX,Phillips 66,265.33,259.47,0.37
+2026-09-11,US,SWKS,Skyworks Solutions,92.3,88.35,5.14
+2026-09-11,US,VLO,Valero Energy,399.26,390.42,1.29

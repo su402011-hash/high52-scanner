@@ -9,9 +9,9 @@ JP,7267.T,ホンダ,2
 JP,8001.T,伊藤忠商事,2
 JP,8411.T,みずほFG,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,15
-US,PSX,Phillips 66,15
-US,VLO,Valero Energy,15
+US,MPC,Marathon Petroleum,16
+US,PSX,Phillips 66,16
+US,VLO,Valero Energy,16
 US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
 US,SCHW,Charles Schwab Corporation,10
@@ -19,22 +19,22 @@ US,DXCM,Dexcom,9
 US,IVZ,Invesco,9
 US,BAC,Bank of America,8
 US,COP,ConocoPhillips,8
+US,DELL,Dell Technologies,8
+US,HPQ,HP Inc.,8
 US,RVTY,Revvity,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
-US,DELL,Dell Technologies,7
-US,HPQ,HP Inc.,7
 US,IQV,IQVIA,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
+US,EXPD,Expeditors International,6
 US,EXPE,Expedia Group,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ABNB,Airbnb,5
 US,CRWD,CrowdStrike,5
-US,EXPD,Expeditors International,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,USB,U.S. Bancorp,5
@@ -97,6 +97,7 @@ US,V,Visa Inc.,2
 US,ADM,Archer Daniels Midland,1
 US,AMZN,Amazon,1
 US,APA,APA Corporation,1
+US,BBY,Best Buy,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,EOG,EOG Resources,1
@@ -118,6 +119,7 @@ US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
 US,SLB,Schlumberger,1
+US,SWKS,Skyworks Solutions,1
 US,TMO,Thermo Fisher Scientific,1
 US,URI,United Rentals,1
 US,VTRS,Viatris,1
