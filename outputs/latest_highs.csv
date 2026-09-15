@@ -1,12 +1,11 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-09-14,JP,8001.T,伊藤忠商事,2373.5,2340.5,2.03
-2026-09-14,JP,9432.T,NTT,178.9,178.3,1.48
-2026-09-14,US,APA,APA Corporation,46.59,44.73,0.45
-2026-09-14,US,BBY,Best Buy,94.92,90.8,3.08
-2026-09-14,US,CNC,Centene Corporation,69.62,66.42,1.56
-2026-09-14,US,COP,ConocoPhillips,139.82,137.35,0.23
-2026-09-14,US,CRWD,CrowdStrike,239.37,206.74,-1.02
-2026-09-14,US,CVX,Chevron Corporation,217.65,214.06,0.61
-2026-09-14,US,EXPD,Expeditors International,193.82,192.6,1.73
-2026-09-14,US,MPC,Marathon Petroleum,409.5,395.93,0.89
-2026-09-14,US,VLO,Valero Energy,399.7,390.42,1.29
+2026-09-15,JP,9432.T,NTT,179.3,178.1,-0.11
+2026-09-14,US,APA,APA Corporation,46.59,45.03,0.67
+2026-09-14,US,BBY,Best Buy,94.92,94.83,4.44
+2026-09-14,US,CNC,Centene Corporation,69.63,69.41,4.5
+2026-09-14,US,COP,ConocoPhillips,139.82,136.67,-0.5
+2026-09-14,US,CRWD,CrowdStrike,239.37,235.38,13.85
+2026-09-14,US,CVX,Chevron Corporation,217.65,212.17,-0.88
+2026-09-14,US,EXPD,Expeditors International,193.82,193.61,0.52
+2026-09-14,US,MPC,Marathon Petroleum,409.5,396.45,0.13
+2026-09-14,US,VLO,Valero Energy,399.76,382.95,-1.91
