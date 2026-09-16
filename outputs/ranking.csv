@@ -9,24 +9,24 @@ JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
 JP,8411.T,みずほFG,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,18
-US,PSX,Phillips 66,17
-US,VLO,Valero Energy,17
+US,MPC,Marathon Petroleum,19
+US,PSX,Phillips 66,18
+US,VLO,Valero Energy,18
 US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
 US,COP,ConocoPhillips,10
+US,DELL,Dell Technologies,10
+US,RVTY,Revvity,10
 US,SCHW,Charles Schwab Corporation,10
-US,DELL,Dell Technologies,9
 US,DXCM,Dexcom,9
+US,IQV,IQVIA,9
 US,IVZ,Invesco,9
-US,RVTY,Revvity,9
 US,BAC,Bank of America,8
+US,CRWD,CrowdStrike,8
 US,EXPD,Expeditors International,8
 US,HPQ,HP Inc.,8
-US,IQV,IQVIA,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
-US,CRWD,CrowdStrike,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,CPAY,Corpay,6
@@ -46,6 +46,7 @@ US,BDX,Becton Dickinson,4
 US,BIIB,Biogen,4
 US,CVX,Chevron Corporation,4
 US,FAST,Fastenal,4
+US,FTNT,Fortinet,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
 US,NTAP,NetApp,4
@@ -59,7 +60,6 @@ US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,DE,Deere & Company,3
 US,FCX,Freeport-McMoRan,3
-US,FTNT,Fortinet,3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
 US,OKE,Oneok,3
@@ -95,6 +95,7 @@ US,PKG,Packaging Corporation of America,2
 US,PNC,PNC Financial Services,2
 US,SNA,Snap-on,2
 US,STT,State Street Corporation,2
+US,TMO,Thermo Fisher Scientific,2
 US,TPR,"Tapestry, Inc.",2
 US,V,Visa Inc.,2
 US,ADM,Archer Daniels Midland,1
@@ -103,6 +104,7 @@ US,CNC,Centene Corporation,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,FANG,Diamondback Energy,1
+US,FFIV,"F5, Inc.",1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
@@ -121,6 +123,5 @@ US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
 US,SLB,Schlumberger,1
 US,SWKS,Skyworks Solutions,1
-US,TMO,Thermo Fisher Scientific,1
 US,URI,United Rentals,1
 US,VTRS,Viatris,1
