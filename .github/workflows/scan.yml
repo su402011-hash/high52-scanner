@@ -32,7 +32,11 @@ jobs:
         run: python high52_scanner.py scan
 
       - name: Update ranking
-        run: python high52_scanner.py rank || true
+        run: python high52_scanner.py rank ||       - name: Track picks
+        run: python track.py || true
+
+
+
 
       - name: Commit results
         run: |
