@@ -10,19 +10,19 @@ JP,7267.T,ホンダ,2
 JP,8411.T,みずほFG,2
 JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,19
-US,PSX,Phillips 66,18
+US,PSX,Phillips 66,19
 US,VLO,Valero Energy,18
 US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
+US,DELL,Dell Technologies,11
+US,RVTY,Revvity,11
 US,COP,ConocoPhillips,10
-US,DELL,Dell Technologies,10
-US,RVTY,Revvity,10
+US,IQV,IQVIA,10
 US,SCHW,Charles Schwab Corporation,10
+US,CRWD,CrowdStrike,9
 US,DXCM,Dexcom,9
-US,IQV,IQVIA,9
 US,IVZ,Invesco,9
 US,BAC,Bank of America,8
-US,CRWD,CrowdStrike,8
 US,EXPD,Expeditors International,8
 US,HPQ,HP Inc.,8
 US,AMGN,Amgen,7
@@ -34,19 +34,20 @@ US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
+US,WAT,Waters Corporation,6
 US,ABNB,Airbnb,5
 US,DGX,Quest Diagnostics,5
+US,FTNT,Fortinet,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,USB,U.S. Bancorp,5
-US,WAT,Waters Corporation,5
 US,ZBRA,Zebra Technologies,5
 US,AME,Ametek,4
+US,BBY,Best Buy,4
 US,BDX,Becton Dickinson,4
 US,BIIB,Biogen,4
 US,CVX,Chevron Corporation,4
 US,FAST,Fastenal,4
-US,FTNT,Fortinet,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
 US,NTAP,NetApp,4
@@ -55,7 +56,6 @@ US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
 US,APA,APA Corporation,3
-US,BBY,Best Buy,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,DE,Deere & Company,3
@@ -68,6 +68,7 @@ US,PFE,Pfizer,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
 US,TECH,Bio-Techne,3
+US,TMO,Thermo Fisher Scientific,3
 US,TRGP,Targa Resources,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
@@ -82,6 +83,7 @@ US,DDOG,Datadog,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,EOG,EOG Resources,2
+US,FFIV,"F5, Inc.",2
 US,GE,GE Aerospace,2
 US,JCI,Johnson Controls,2
 US,JNJ,Johnson & Johnson,2
@@ -95,7 +97,6 @@ US,PKG,Packaging Corporation of America,2
 US,PNC,PNC Financial Services,2
 US,SNA,Snap-on,2
 US,STT,State Street Corporation,2
-US,TMO,Thermo Fisher Scientific,2
 US,TPR,"Tapestry, Inc.",2
 US,V,Visa Inc.,2
 US,ADM,Archer Daniels Midland,1
@@ -104,7 +105,6 @@ US,CNC,Centene Corporation,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,FANG,Diamondback Energy,1
-US,FFIV,"F5, Inc.",1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
