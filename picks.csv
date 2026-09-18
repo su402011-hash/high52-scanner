@@ -1,4 +1,4 @@
-date	ticker	name	type	entry_type	entry	target1	target2	stop	note
+date,ticker,name,type,entry_type,entry,target1,target2,stop,note
 2026-08-17	7089.T	フォースタートアップス	短期	即	1600	1710	1880	1470	8/17短期筆頭
 2026-08-17	4441.T	トビラシステムズ	短期	即	1461	1560	1700	1400	8/17逆張り
 2026-08-17	MPC	Marathon Petroleum	短期	即	358	380	400	338	8/17製油
