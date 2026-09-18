@@ -9,12 +9,12 @@ JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
 JP,8411.T,みずほFG,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,20
-US,PSX,Phillips 66,19
-US,VLO,Valero Energy,19
+US,MPC,Marathon Petroleum,21
+US,PSX,Phillips 66,20
+US,VLO,Valero Energy,20
+US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
-US,DELL,Dell Technologies,11
 US,RVTY,Revvity,11
 US,COP,ConocoPhillips,10
 US,IQV,IQVIA,10
@@ -60,6 +60,7 @@ US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,DE,Deere & Company,3
 US,FCX,Freeport-McMoRan,3
+US,FFIV,"F5, Inc.",3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
 US,OKE,Oneok,3
@@ -83,7 +84,6 @@ US,DDOG,Datadog,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,EOG,EOG Resources,2
-US,FFIV,"F5, Inc.",2
 US,GE,GE Aerospace,2
 US,JCI,Johnson Controls,2
 US,JNJ,Johnson & Johnson,2
