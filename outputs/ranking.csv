@@ -9,9 +9,9 @@ JP,6861.T,キーエンス,2
 JP,7267.T,ホンダ,2
 JP,8411.T,みずほFG,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,21
+US,MPC,Marathon Petroleum,22
+US,VLO,Valero Energy,21
 US,PSX,Phillips 66,20
-US,VLO,Valero Energy,20
 US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
 US,CRL,Charles River Laboratories,11
@@ -100,6 +100,7 @@ US,STT,State Street Corporation,2
 US,TPR,"Tapestry, Inc.",2
 US,V,Visa Inc.,2
 US,ADM,Archer Daniels Midland,1
+US,AMD,Advanced Micro Devices,1
 US,AMZN,Amazon,1
 US,CNC,Centene Corporation,1
 US,DVA,DaVita,1
