@@ -1,9 +1,9 @@
 ﻿date,market,ticker,name,high,close,change_pct
 2026-09-18,JP,9432.T,NTT,180.1,177.3,-1.5
-2026-09-21,US,AMD,Advanced Micro Devices,616.68,559.82,2.7
-2026-09-21,US,DGX,Quest Diagnostics,248.84,246.45,-0.4
-2026-09-21,US,FFIV,"F5, Inc.",450.94,432.03,-0.6
-2026-09-21,US,MPC,Marathon Petroleum,431.08,424.89,0.69
-2026-09-21,US,MRNA,Moderna,176.86,154.04,-2.55
-2026-09-21,US,VLO,Valero Energy,419.04,413.28,0.18
-2026-09-21,US,WBD,Warner Bros. Discovery,30.92,27.8,-1.56
+2026-09-21,US,AMD,Advanced Micro Devices,616.69,615.52,9.95
+2026-09-21,US,DGX,Quest Diagnostics,248.84,244.88,-0.64
+2026-09-21,US,FFIV,"F5, Inc.",451.02,450.1,4.18
+2026-09-21,US,MPC,Marathon Petroleum,431.08,402.38,-5.3
+2026-09-21,US,MRNA,Moderna,176.86,172.94,12.27
+2026-09-21,US,VLO,Valero Energy,419.04,393.27,-4.84
+2026-09-21,US,WBD,Warner Bros. Discovery,30.92,30.8,10.79
