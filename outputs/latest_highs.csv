@@ -1,15 +1,14 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-09-24,JP,7267.T,ホンダ,1766.5,1733.0,2.61
-2026-09-24,US,A,Agilent Technologies,174.77,165.32,2.09
-2026-09-24,US,AMD,Advanced Micro Devices,630.79,614.61,-1.47
-2026-09-24,US,CRWD,CrowdStrike,263.86,262.49,5.27
-2026-09-24,US,FTNT,Fortinet,181.36,178.74,2.0
-2026-09-24,US,HPE,Hewlett Packard Enterprise,65.48,62.33,2.13
-2026-09-24,US,ILMN,"Illumina, Inc.",277.95,255.38,6.93
-2026-09-24,US,META,Meta Platforms,779.82,744.1,1.02
-2026-09-24,US,MRNA,Moderna,195.71,182.11,-0.25
-2026-09-24,US,MTD,Mettler Toledo,1540.83,1492.34,4.33
-2026-09-24,US,P,Everpure,131.4,109.65,-3.53
-2026-09-24,US,RVTY,Revvity,152.26,142.11,-1.03
-2026-09-24,US,TMO,Thermo Fisher Scientific,682.98,665.3,0.99
-2026-09-24,US,WAT,Waters Corporation,436.28,420.57,-0.79
+2026-09-24,US,A,Agilent Technologies,174.77,172.84,4.55
+2026-09-24,US,AMD,Advanced Micro Devices,630.8,629.26,2.38
+2026-09-24,US,CRWD,CrowdStrike,263.87,259.67,-1.07
+2026-09-24,US,FTNT,Fortinet,181.37,178.67,-0.04
+2026-09-24,US,HPE,Hewlett Packard Enterprise,65.48,63.52,1.91
+2026-09-24,US,ILMN,"Illumina, Inc.",277.95,273.9,7.25
+2026-09-24,US,META,Meta Platforms,779.82,777.59,4.5
+2026-09-24,US,MRNA,Moderna,195.71,194.82,6.98
+2026-09-24,US,MTD,Mettler Toledo,1541.02,1519.15,1.8
+2026-09-24,US,P,Everpure,131.41,121.88,11.15
+2026-09-24,US,RVTY,Revvity,152.26,150.68,6.03
+2026-09-24,US,TMO,Thermo Fisher Scientific,682.98,678.39,1.97
+2026-09-24,US,WAT,Waters Corporation,436.34,430.3,2.31
