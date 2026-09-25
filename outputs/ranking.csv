@@ -12,12 +12,12 @@ JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,22
 US,VLO,Valero Energy,21
 US,PSX,Phillips 66,20
+US,CRWD,CrowdStrike,12
 US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
+US,RVTY,Revvity,12
 US,CRL,Charles River Laboratories,11
-US,CRWD,CrowdStrike,11
 US,IQV,IQVIA,11
-US,RVTY,Revvity,11
 US,COP,ConocoPhillips,10
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
@@ -25,28 +25,31 @@ US,IVZ,Invesco,9
 US,BAC,Bank of America,8
 US,EXPD,Expeditors International,8
 US,HPQ,HP Inc.,8
+US,WAT,Waters Corporation,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
 US,DGX,Quest Diagnostics,7
+US,FTNT,Fortinet,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
-US,WAT,Waters Corporation,7
 US,BIIB,Biogen,6
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,FFIV,"F5, Inc.",6
-US,FTNT,Fortinet,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
+US,A,Agilent Technologies,5
 US,ABNB,Airbnb,5
 US,BBY,Best Buy,5
+US,MRNA,Moderna,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,TECH,Bio-Techne,5
+US,TMO,Thermo Fisher Scientific,5
 US,USB,U.S. Bancorp,5
 US,ZBRA,Zebra Technologies,5
-US,A,Agilent Technologies,4
+US,AMD,Advanced Micro Devices,4
 US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
 US,CVX,Chevron Corporation,4
@@ -54,14 +57,11 @@ US,DE,Deere & Company,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
-US,MRNA,Moderna,4
 US,NTAP,NetApp,4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
-US,TMO,Thermo Fisher Scientific,4
-US,AMD,Advanced Micro Devices,3
 US,APA,APA Corporation,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
@@ -87,10 +87,12 @@ US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,EOG,EOG Resources,2
 US,GE,GE Aerospace,2
+US,ILMN,"Illumina, Inc.",2
 US,JCI,Johnson Controls,2
 US,JNJ,Johnson & Johnson,2
 US,KO,Coca-Cola Company (The),2
 US,LYV,Live Nation Entertainment,2
+US,META,Meta Platforms,2
 US,MSI,Motorola Solutions,2
 US,MTB,M&T Bank,2
 US,NUE,Nucor,2
@@ -110,18 +112,19 @@ US,CNC,Centene Corporation,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,FANG,Diamondback Energy,1
+US,HPE,Hewlett Packard Enterprise,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
 US,IFF,International Flavors & Fragrances,1
-US,ILMN,"Illumina, Inc.",1
 US,LLY,Lilly (Eli),1
 US,MET,MetLife,1
-US,META,Meta Platforms,1
 US,MNST,Monster Beverage,1
+US,MTD,Mettler Toledo,1
 US,NEM,Newmont,1
 US,NTRS,Northern Trust,1
 US,NWSA,News Corp (Class A),1
+US,P,Everpure,1
 US,PH,Parker Hannifin,1
 US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
