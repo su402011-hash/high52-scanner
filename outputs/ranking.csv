@@ -37,19 +37,19 @@ US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,FFIV,"F5, Inc.",6
+US,MRNA,Moderna,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,A,Agilent Technologies,5
 US,ABNB,Airbnb,5
+US,AMD,Advanced Micro Devices,5
 US,BBY,Best Buy,5
-US,MRNA,Moderna,5
 US,NDSN,Nordson Corporation,5
 US,PANW,Palo Alto Networks,5
 US,TECH,Bio-Techne,5
 US,TMO,Thermo Fisher Scientific,5
 US,USB,U.S. Bancorp,5
 US,ZBRA,Zebra Technologies,5
-US,AMD,Advanced Micro Devices,4
 US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
 US,CVX,Chevron Corporation,4
@@ -87,6 +87,7 @@ US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,EOG,EOG Resources,2
 US,GE,GE Aerospace,2
+US,HPE,Hewlett Packard Enterprise,2
 US,ILMN,"Illumina, Inc.",2
 US,JCI,Johnson Controls,2
 US,JNJ,Johnson & Johnson,2
@@ -112,7 +113,6 @@ US,CNC,Centene Corporation,1
 US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,FANG,Diamondback Energy,1
-US,HPE,Hewlett Packard Enterprise,1
 US,HSIC,Henry Schein,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
