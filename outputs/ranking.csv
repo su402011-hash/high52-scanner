@@ -22,17 +22,18 @@ US,COP,ConocoPhillips,10
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
 US,IVZ,Invesco,9
+US,WAT,Waters Corporation,9
 US,BAC,Bank of America,8
 US,EXPD,Expeditors International,8
 US,HPQ,HP Inc.,8
-US,WAT,Waters Corporation,8
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
+US,BIIB,Biogen,7
 US,DGX,Quest Diagnostics,7
 US,FTNT,Fortinet,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
-US,BIIB,Biogen,6
+US,A,Agilent Technologies,6
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
@@ -40,7 +41,6 @@ US,FFIV,"F5, Inc.",6
 US,MRNA,Moderna,6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
-US,A,Agilent Technologies,5
 US,ABNB,Airbnb,5
 US,AMD,Advanced Micro Devices,5
 US,BBY,Best Buy,5
@@ -96,6 +96,7 @@ US,LYV,Live Nation Entertainment,2
 US,META,Meta Platforms,2
 US,MSI,Motorola Solutions,2
 US,MTB,M&T Bank,2
+US,MTD,Mettler Toledo,2
 US,NUE,Nucor,2
 US,NWS,News Corp (Class B),2
 US,PKG,Packaging Corporation of America,2
@@ -120,7 +121,6 @@ US,IFF,International Flavors & Fragrances,1
 US,LLY,Lilly (Eli),1
 US,MET,MetLife,1
 US,MNST,Monster Beverage,1
-US,MTD,Mettler Toledo,1
 US,NEM,Newmont,1
 US,NTRS,Northern Trust,1
 US,NWSA,News Corp (Class A),1
