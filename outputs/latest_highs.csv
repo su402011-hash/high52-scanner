@@ -1,5 +1,7 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-09-28,US,A,Agilent Technologies,176.02,172.79,-0.03
-2026-09-28,US,BIIB,Biogen,230.49,227.6,0.55
-2026-09-28,US,MTD,Mettler Toledo,1545.45,1511.64,-0.49
-2026-09-28,US,WAT,Waters Corporation,445.48,433.54,0.75
+2026-09-29,US,A,Agilent Technologies,177.05,175.38,0.1
+2026-09-29,US,ILMN,"Illumina, Inc.",278.99,273.68,0.65
+2026-09-29,US,MRNA,Moderna,208.9,202.39,2.59
+2026-09-29,US,MTD,Mettler Toledo,1552.71,1539.4,-0.38
+2026-09-29,US,P,Everpure,132.43,129.35,-0.03
+2026-09-29,US,VTRS,Viatris,18.43,18.22,-0.27
