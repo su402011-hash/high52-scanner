@@ -12,10 +12,10 @@ JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,22
 US,VLO,Valero Energy,21
 US,PSX,Phillips 66,20
+US,RVTY,Revvity,13
 US,CRWD,CrowdStrike,12
 US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
-US,RVTY,Revvity,12
 US,CRL,Charles River Laboratories,11
 US,IQV,IQVIA,11
 US,COP,ConocoPhillips,10
@@ -45,6 +45,7 @@ US,ABNB,Airbnb,5
 US,AMD,Advanced Micro Devices,5
 US,BBY,Best Buy,5
 US,NDSN,Nordson Corporation,5
+US,NTAP,NetApp,5
 US,PANW,Palo Alto Networks,5
 US,TECH,Bio-Techne,5
 US,TMO,Thermo Fisher Scientific,5
@@ -57,7 +58,6 @@ US,DE,Deere & Company,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JPM,JPMorgan Chase,4
-US,NTAP,NetApp,4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
