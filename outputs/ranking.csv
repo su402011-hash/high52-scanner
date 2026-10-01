@@ -12,7 +12,7 @@ JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,22
 US,VLO,Valero Energy,21
 US,PSX,Phillips 66,20
-US,CRWD,CrowdStrike,14
+US,CRWD,CrowdStrike,15
 US,RVTY,Revvity,14
 US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
@@ -60,6 +60,7 @@ US,GRMN,Garmin,4
 US,ILMN,"Illumina, Inc.",4
 US,JPM,JPMorgan Chase,4
 US,MTD,Mettler Toledo,4
+US,P,Everpure,4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
@@ -73,7 +74,6 @@ US,GPN,Global Payments,3
 US,HPE,Hewlett Packard Enterprise,3
 US,OKE,Oneok,3
 US,OMC,Omnicom Group,3
-US,P,Everpure,3
 US,PFE,Pfizer,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
