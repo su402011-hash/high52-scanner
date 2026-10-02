@@ -1,5 +1,9 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-10-02,JP,6857.T,アドバンテスト,39580.0,39200.0,4.23
-2026-10-01,US,CRWD,CrowdStrike,269.3,264.75,0.77
-2026-10-01,US,KEYS,Keysight Technologies,376.67,364.04,0.94
-2026-10-01,US,P,Everpure,135.68,130.78,0.56
+2026-10-02,JP,6857.T,アドバンテスト,39580.0,38630.0,2.71
+2026-10-02,US,CRWD,CrowdStrike,273.54,271.83,2.16
+2026-10-02,US,FTNT,Fortinet,183.09,182.01,1.84
+2026-10-02,US,HPE,Hewlett Packard Enterprise,68.67,68.46,6.01
+2026-10-02,US,KEYS,Keysight Technologies,381.73,380.53,1.78
+2026-10-02,US,NTAP,NetApp,223.46,223.05,3.72
+2026-10-02,US,P,Everpure,138.99,138.55,3.3
+2026-10-02,US,PANW,Palo Alto Networks,409.5,406.44,2.57
