@@ -9,8 +9,8 @@ JP,7267.T,ホンダ,3
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,23
-US,VLO,Valero Energy,23
+US,MPC,Marathon Petroleum,24
+US,VLO,Valero Energy,24
 US,PSX,Phillips 66,20
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
@@ -26,8 +26,11 @@ US,DXCM,Dexcom,9
 US,EXPD,Expeditors International,9
 US,IVZ,Invesco,9
 US,BAC,Bank of America,8
+US,FFIV,"F5, Inc.",8
 US,HPQ,HP Inc.,8
 US,MRNA,Moderna,8
+US,NTAP,NetApp,8
+US,P,Everpure,8
 US,PANW,Palo Alto Networks,8
 US,A,Agilent Technologies,7
 US,AMD,Advanced Micro Devices,7
@@ -35,22 +38,19 @@ US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
 US,BIIB,Biogen,7
 US,DGX,Quest Diagnostics,7
-US,FFIV,"F5, Inc.",7
 US,MRK,Merck & Co.,7
-US,NTAP,NetApp,7
-US,P,Everpure,7
 US,TGT,Target Corporation,7
 US,TMO,Thermo Fisher Scientific,7
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
+US,HPE,Hewlett Packard Enterprise,6
 US,ILMN,"Illumina, Inc.",6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ZBRA,Zebra Technologies,6
 US,ABNB,Airbnb,5
 US,BBY,Best Buy,5
-US,HPE,Hewlett Packard Enterprise,5
 US,MTD,Mettler Toledo,5
 US,NDSN,Nordson Corporation,5
 US,TECH,Bio-Techne,5
@@ -86,6 +86,7 @@ US,TRGP,Targa Resources,3
 US,WBD,Warner Bros. Discovery,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
+US,ABBV,AbbVie,2
 US,AIZ,Assurant,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
@@ -113,7 +114,6 @@ US,TPR,"Tapestry, Inc.",2
 US,V,Visa Inc.,2
 US,VTRS,Viatris,2
 US,AAPL,Apple Inc.,1
-US,ABBV,AbbVie,1
 US,ADM,Archer Daniels Midland,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
