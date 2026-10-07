@@ -2,15 +2,15 @@
 JP,9432.T,NTT,13
 JP,9101.T,日本郵船,10
 JP,6098.T,リクルートHD,6
-JP,6857.T,アドバンテスト,5
+JP,6857.T,アドバンテスト,6
 JP,8001.T,伊藤忠商事,4
+JP,8411.T,みずほFG,4
 JP,7267.T,ホンダ,3
-JP,8411.T,みずほFG,3
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,23
-US,VLO,Valero Energy,22
+US,VLO,Valero Energy,23
 US,PSX,Phillips 66,20
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
@@ -47,6 +47,7 @@ US,EXPE,Expedia Group,6
 US,ILMN,"Illumina, Inc.",6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
+US,ZBRA,Zebra Technologies,6
 US,ABNB,Airbnb,5
 US,BBY,Best Buy,5
 US,HPE,Hewlett Packard Enterprise,5
@@ -54,7 +55,6 @@ US,MTD,Mettler Toledo,5
 US,NDSN,Nordson Corporation,5
 US,TECH,Bio-Techne,5
 US,USB,U.S. Bancorp,5
-US,ZBRA,Zebra Technologies,5
 US,AME,Ametek,4
 US,BDX,Becton Dickinson,4
 US,CVX,Chevron Corporation,4
@@ -68,12 +68,14 @@ US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
+US,ANET,Arista Networks,3
 US,APA,APA Corporation,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
+US,LITE,Lumentum,3
 US,NVDA,Nvidia,3
 US,OKE,Oneok,3
 US,OMC,Omnicom Group,3
@@ -85,7 +87,6 @@ US,WBD,Warner Bros. Discovery,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
 US,AIZ,Assurant,2
-US,ANET,Arista Networks,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
 US,CAH,Cardinal Health,2
@@ -97,7 +98,6 @@ US,EOG,EOG Resources,2
 US,GE,GE Aerospace,2
 US,JNJ,Johnson & Johnson,2
 US,KO,Coca-Cola Company (The),2
-US,LITE,Lumentum,2
 US,LYV,Live Nation Entertainment,2
 US,META,Meta Platforms,2
 US,MSI,Motorola Solutions,2
