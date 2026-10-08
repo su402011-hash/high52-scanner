@@ -9,9 +9,9 @@ JP,7267.T,ホンダ,3
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,24
-US,VLO,Valero Energy,24
-US,PSX,Phillips 66,20
+US,MPC,Marathon Petroleum,25
+US,VLO,Valero Energy,25
+US,PSX,Phillips 66,21
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
 US,CRL,Charles River Laboratories,13
@@ -25,12 +25,12 @@ US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
 US,EXPD,Expeditors International,9
 US,IVZ,Invesco,9
+US,P,Everpure,9
 US,BAC,Bank of America,8
 US,FFIV,"F5, Inc.",8
 US,HPQ,HP Inc.,8
 US,MRNA,Moderna,8
 US,NTAP,NetApp,8
-US,P,Everpure,8
 US,PANW,Palo Alto Networks,8
 US,A,Agilent Technologies,7
 US,AMD,Advanced Micro Devices,7
@@ -50,13 +50,13 @@ US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ZBRA,Zebra Technologies,6
 US,ABNB,Airbnb,5
+US,ANET,Arista Networks,5
 US,BBY,Best Buy,5
 US,MTD,Mettler Toledo,5
 US,NDSN,Nordson Corporation,5
 US,TECH,Bio-Techne,5
 US,USB,U.S. Bancorp,5
 US,AME,Ametek,4
-US,ANET,Arista Networks,4
 US,BDX,Becton Dickinson,4
 US,CVX,Chevron Corporation,4
 US,DE,Deere & Company,4

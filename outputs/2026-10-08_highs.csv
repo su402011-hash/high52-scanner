@@ -1,9 +1,6 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-10-07,US,ABBV,AbbVie,274.94,266.69,0.35
-2026-10-07,US,ANET,Arista Networks,217.32,215.36,4.09
-2026-10-07,US,FFIV,"F5, Inc.",472.25,469.79,2.46
-2026-10-07,US,HPE,Hewlett Packard Enterprise,73.28,70.48,3.1
-2026-10-07,US,MPC,Marathon Petroleum,444.99,432.36,-0.26
-2026-10-07,US,NTAP,NetApp,238.07,228.45,2.09
-2026-10-07,US,P,Everpure,153.44,147.2,2.31
-2026-10-07,US,VLO,Valero Energy,428.99,419.22,-0.03
+2026-10-08,US,ANET,Arista Networks,217.32,216.8,0.45
+2026-10-08,US,MPC,Marathon Petroleum,460.27,458.52,3.68
+2026-10-08,US,P,Everpure,154.96,154.23,1.03
+2026-10-08,US,PSX,Phillips 66,278.26,277.34,2.11
+2026-10-08,US,VLO,Valero Energy,438.81,436.3,2.88
