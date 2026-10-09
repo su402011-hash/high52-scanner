@@ -12,25 +12,25 @@ JP,2914.T,JT,1
 JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,25
 US,VLO,Valero Energy,25
-US,PSX,Phillips 66,21
+US,PSX,Phillips 66,22
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
 US,CRL,Charles River Laboratories,13
 US,DELL,Dell Technologies,12
 US,LH,Labcorp,12
+US,FTNT,Fortinet,11
 US,IQV,IQVIA,11
 US,WAT,Waters Corporation,11
 US,COP,ConocoPhillips,10
-US,FTNT,Fortinet,10
+US,EXPD,Expeditors International,10
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
-US,EXPD,Expeditors International,9
 US,IVZ,Invesco,9
+US,MRNA,Moderna,9
 US,P,Everpure,9
 US,BAC,Bank of America,8
 US,FFIV,"F5, Inc.",8
 US,HPQ,HP Inc.,8
-US,MRNA,Moderna,8
 US,NTAP,NetApp,8
 US,PANW,Palo Alto Networks,8
 US,A,Agilent Technologies,7
@@ -66,17 +66,18 @@ US,GRMN,Garmin,4
 US,JCI,Johnson Controls,4
 US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
+US,LITE,Lumentum,4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
+US,ABBV,AbbVie,3
 US,APA,APA Corporation,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
-US,LITE,Lumentum,3
 US,NVDA,Nvidia,3
 US,OKE,Oneok,3
 US,OMC,Omnicom Group,3
@@ -87,7 +88,6 @@ US,TRGP,Targa Resources,3
 US,WBD,Warner Bros. Discovery,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
-US,ABBV,AbbVie,2
 US,AIZ,Assurant,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
@@ -123,6 +123,7 @@ US,DVA,DaVita,1
 US,EMR,Emerson Electric,1
 US,FANG,Diamondback Energy,1
 US,HSIC,Henry Schein,1
+US,HUM,Humana,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
 US,IFF,International Flavors & Fragrances,1
