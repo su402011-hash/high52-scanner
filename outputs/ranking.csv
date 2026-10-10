@@ -10,8 +10,8 @@ JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,2914.T,JT,1
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,25
-US,VLO,Valero Energy,25
+US,MPC,Marathon Petroleum,26
+US,VLO,Valero Energy,26
 US,PSX,Phillips 66,22
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
@@ -25,11 +25,11 @@ US,COP,ConocoPhillips,10
 US,EXPD,Expeditors International,10
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
+US,FFIV,"F5, Inc.",9
 US,IVZ,Invesco,9
 US,MRNA,Moderna,9
 US,P,Everpure,9
 US,BAC,Bank of America,8
-US,FFIV,"F5, Inc.",8
 US,HPQ,HP Inc.,8
 US,NTAP,NetApp,8
 US,PANW,Palo Alto Networks,8
@@ -39,19 +39,19 @@ US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
 US,BIIB,Biogen,7
 US,DGX,Quest Diagnostics,7
+US,HPE,Hewlett Packard Enterprise,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,TMO,Thermo Fisher Scientific,7
+US,ANET,Arista Networks,6
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
-US,HPE,Hewlett Packard Enterprise,6
 US,ILMN,"Illumina, Inc.",6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ZBRA,Zebra Technologies,6
 US,ABNB,Airbnb,5
-US,ANET,Arista Networks,5
 US,BBY,Best Buy,5
 US,MTD,Mettler Toledo,5
 US,NDSN,Nordson Corporation,5
@@ -75,6 +75,7 @@ US,ABBV,AbbVie,3
 US,APA,APA Corporation,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
+US,DDOG,Datadog,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
@@ -85,6 +86,7 @@ US,PFE,Pfizer,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
 US,TRGP,Targa Resources,3
+US,V,Visa Inc.,3
 US,WBD,Warner Bros. Discovery,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
@@ -93,7 +95,6 @@ US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
 US,CAH,Cardinal Health,2
 US,CFG,Citizens Financial Group,2
-US,DDOG,Datadog,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,EOG,EOG Resources,2
@@ -112,7 +113,6 @@ US,SNA,Snap-on,2
 US,STT,State Street Corporation,2
 US,SWKS,Skyworks Solutions,2
 US,TPR,"Tapestry, Inc.",2
-US,V,Visa Inc.,2
 US,VTRS,Viatris,2
 US,AAPL,Apple Inc.,1
 US,ADM,Archer Daniels Midland,1
@@ -134,6 +134,7 @@ US,NEM,Newmont,1
 US,NTRS,Northern Trust,1
 US,NWSA,News Corp (Class A),1
 US,PH,Parker Hannifin,1
+US,PLTR,Palantir Technologies,1
 US,PRU,Prudential Financial,1
 US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
