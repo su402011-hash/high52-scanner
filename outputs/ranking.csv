@@ -6,18 +6,18 @@ JP,6857.T,アドバンテスト,6
 JP,8001.T,伊藤忠商事,4
 JP,8411.T,みずほFG,4
 JP,7267.T,ホンダ,3
+JP,2914.T,JT,2
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
-JP,2914.T,JT,1
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,26
-US,VLO,Valero Energy,26
-US,PSX,Phillips 66,22
+US,MPC,Marathon Petroleum,27
+US,VLO,Valero Energy,27
+US,PSX,Phillips 66,23
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
 US,CRL,Charles River Laboratories,13
+US,FTNT,Fortinet,13
 US,DELL,Dell Technologies,12
-US,FTNT,Fortinet,12
 US,LH,Labcorp,12
 US,IQV,IQVIA,11
 US,WAT,Waters Corporation,11
@@ -25,10 +25,10 @@ US,COP,ConocoPhillips,10
 US,EXPD,Expeditors International,10
 US,FFIV,"F5, Inc.",10
 US,MRNA,Moderna,10
+US,NTAP,NetApp,10
 US,SCHW,Charles Schwab Corporation,10
 US,DXCM,Dexcom,9
 US,IVZ,Invesco,9
-US,NTAP,NetApp,9
 US,P,Everpure,9
 US,BAC,Bank of America,8
 US,BIIB,Biogen,8
@@ -51,16 +51,18 @@ US,ILMN,"Illumina, Inc.",6
 US,SWK,Stanley Black & Decker,6
 US,VRTX,Vertex Pharmaceuticals,6
 US,ZBRA,Zebra Technologies,6
+US,ABBV,AbbVie,5
 US,ABNB,Airbnb,5
 US,BBY,Best Buy,5
+US,CVX,Chevron Corporation,5
 US,MTD,Mettler Toledo,5
 US,NDSN,Nordson Corporation,5
 US,TECH,Bio-Techne,5
 US,USB,U.S. Bancorp,5
-US,ABBV,AbbVie,4
+US,V,Visa Inc.,5
 US,AME,Ametek,4
+US,APA,APA Corporation,4
 US,BDX,Becton Dickinson,4
-US,CVX,Chevron Corporation,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
 US,FAST,Fastenal,4
@@ -73,8 +75,6 @@ US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
-US,V,Visa Inc.,4
-US,APA,APA Corporation,3
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,FCX,Freeport-McMoRan,3
@@ -90,6 +90,7 @@ US,TRGP,Targa Resources,3
 US,WBD,Warner Bros. Discovery,3
 US,WSM,"Williams-Sonoma, Inc.",3
 US,XYZ,"Block, Inc.",3
+US,AAPL,Apple Inc.,2
 US,AIZ,Assurant,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
@@ -102,6 +103,7 @@ US,GE,GE Aerospace,2
 US,JNJ,Johnson & Johnson,2
 US,KO,Coca-Cola Company (The),2
 US,LYV,Live Nation Entertainment,2
+US,MET,MetLife,2
 US,META,Meta Platforms,2
 US,MSI,Motorola Solutions,2
 US,MTB,M&T Bank,2
@@ -115,7 +117,6 @@ US,STT,State Street Corporation,2
 US,SWKS,Skyworks Solutions,2
 US,TPR,"Tapestry, Inc.",2
 US,VTRS,Viatris,2
-US,AAPL,Apple Inc.,1
 US,ADM,Archer Daniels Midland,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
@@ -129,7 +130,7 @@ US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
 US,IFF,International Flavors & Fragrances,1
 US,LLY,Lilly (Eli),1
-US,MET,MetLife,1
+US,MA,Mastercard,1
 US,MNST,Monster Beverage,1
 US,NEM,Newmont,1
 US,NTRS,Northern Trust,1
@@ -141,3 +142,4 @@ US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
 US,SLB,Schlumberger,1
 US,URI,United Rentals,1
+US,VEEV,Veeva Systems,1
