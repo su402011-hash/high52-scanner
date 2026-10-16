@@ -1,15 +1,15 @@
 ﻿market,ticker,name,更新回数
 JP,9432.T,NTT,13
 JP,9101.T,日本郵船,10
-JP,6098.T,リクルートHD,7
+JP,6098.T,リクルートHD,8
 JP,6857.T,アドバンテスト,6
-JP,7267.T,ホンダ,5
-JP,2914.T,JT,4
+JP,7267.T,ホンダ,6
+JP,2914.T,JT,5
 JP,8001.T,伊藤忠商事,4
 JP,8411.T,みずほFG,4
+JP,4502.T,武田薬品,2
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
-JP,4502.T,武田薬品,1
 JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,28
 US,VLO,Valero Energy,28
@@ -68,6 +68,7 @@ US,AME,Ametek,4
 US,CNC,Centene Corporation,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
+US,EOG,EOG Resources,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JCI,Johnson Controls,4
@@ -80,7 +81,6 @@ US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
-US,EOG,EOG Resources,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
 US,GPN,Global Payments,3
