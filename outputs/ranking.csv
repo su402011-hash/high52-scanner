@@ -2,22 +2,22 @@
 JP,9432.T,NTT,13
 JP,9101.T,日本郵船,10
 JP,6098.T,リクルートHD,8
+JP,2914.T,JT,6
 JP,6857.T,アドバンテスト,6
 JP,7267.T,ホンダ,6
-JP,2914.T,JT,5
 JP,8001.T,伊藤忠商事,4
 JP,8411.T,みずほFG,4
-JP,4502.T,武田薬品,2
+JP,4502.T,武田薬品,3
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,6752.T,パナソニックHD,1
-US,MPC,Marathon Petroleum,28
+US,MPC,Marathon Petroleum,29
 US,VLO,Valero Energy,28
-US,PSX,Phillips 66,24
+US,PSX,Phillips 66,25
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,15
+US,COP,ConocoPhillips,14
 US,EXPD,Expeditors International,14
-US,COP,ConocoPhillips,13
 US,CRL,Charles River Laboratories,13
 US,FTNT,Fortinet,13
 US,DELL,Dell Technologies,12
@@ -30,11 +30,11 @@ US,NTAP,NetApp,10
 US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,BIIB,Biogen,9
+US,CVX,Chevron Corporation,9
 US,DXCM,Dexcom,9
 US,IVZ,Invesco,9
 US,A,Agilent Technologies,8
 US,BAC,Bank of America,8
-US,CVX,Chevron Corporation,8
 US,HPQ,HP Inc.,8
 US,MTD,Mettler Toledo,8
 US,PANW,Palo Alto Networks,8
@@ -44,14 +44,15 @@ US,ABBV,AbbVie,7
 US,AMD,Advanced Micro Devices,7
 US,AMGN,Amgen,7
 US,AMP,Ameriprise Financial,7
+US,APA,APA Corporation,7
 US,DGX,Quest Diagnostics,7
 US,HPE,Hewlett Packard Enterprise,7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,ANET,Arista Networks,6
-US,APA,APA Corporation,6
 US,BDX,Becton Dickinson,6
 US,CPAY,Corpay,6
+US,EOG,EOG Resources,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,ILMN,"Illumina, Inc.",6
@@ -61,7 +62,6 @@ US,ZBRA,Zebra Technologies,6
 US,ABNB,Airbnb,5
 US,BBY,Best Buy,5
 US,CNC,Centene Corporation,5
-US,EOG,EOG Resources,5
 US,NDSN,Nordson Corporation,5
 US,PFE,Pfizer,5
 US,TECH,Bio-Techne,5
@@ -81,7 +81,9 @@ US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
+US,VTRS,Viatris,4
 US,WSM,"Williams-Sonoma, Inc.",4
+US,XOM,ExxonMobil,4
 US,BEN,Franklin Resources,3
 US,BRK-B,Berkshire Hathaway,3
 US,FCX,Freeport-McMoRan,3
@@ -96,9 +98,7 @@ US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
 US,TRGP,Targa Resources,3
 US,VEEV,Veeva Systems,3
-US,VTRS,Viatris,3
 US,WBD,Warner Bros. Discovery,3
-US,XOM,ExxonMobil,3
 US,XYZ,"Block, Inc.",3
 US,AAPL,Apple Inc.,2
 US,ADP,Automatic Data Processing,2
@@ -126,6 +126,7 @@ US,SNA,Snap-on,2
 US,STT,State Street Corporation,2
 US,SWKS,Skyworks Solutions,2
 US,TPR,"Tapestry, Inc.",2
+US,WST,West Pharmaceutical Services,2
 US,ADM,Archer Daniels Midland,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
@@ -151,4 +152,3 @@ US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
 US,SLB,Schlumberger,1
 US,URI,United Rentals,1
-US,WST,West Pharmaceutical Services,1
