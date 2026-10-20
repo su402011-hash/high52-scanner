@@ -1,0 +1,12 @@
+﻿date,market,ticker,name,high,close,change_pct
+2026-10-20,JP,7267.T,ホンダ,1817.0,1812.0,0.25
+2026-10-19,US,APA,APA Corporation,49.84,49.15,4.07
+2026-10-19,US,COP,ConocoPhillips,146.69,146.51,3.37
+2026-10-19,US,CVX,Chevron Corporation,225.67,224.99,2.59
+2026-10-19,US,EOG,EOG Resources,159.0,158.01,3.53
+2026-10-19,US,KDP,Keurig Dr Pepper,34.74,34.62,1.29
+2026-10-19,US,MPC,Marathon Petroleum,493.69,478.07,0.24
+2026-10-19,US,PSX,Phillips 66,299.39,293.17,1.37
+2026-10-19,US,VTRS,Viatris,18.75,18.66,2.41
+2026-10-19,US,WST,West Pharmaceutical Services,387.01,384.02,0.26
+2026-10-19,US,XOM,ExxonMobil,179.3,178.98,2.46
