@@ -1,0 +1,28 @@
+﻿date,market,ticker,name,high,close,change_pct
+2026-10-22,JP,6098.T,リクルートHD,19315.0,19295.0,2.39
+2026-10-22,JP,8766.T,東京海上HD,568.8,568.5,1.77
+2026-10-21,US,A,Agilent Technologies,178.21,173.01,1.83
+2026-10-21,US,ADP,Automatic Data Processing,296.14,292.75,1.99
+2026-10-21,US,APA,APA Corporation,50.49,49.9,0.28
+2026-10-21,US,BRK-B,Berkshire Hathaway,543.34,539.82,1.43
+2026-10-21,US,CAH,Cardinal Health,259.02,257.55,1.94
+2026-10-21,US,CNC,Centene Corporation,71.65,70.81,3.18
+2026-10-21,US,COP,ConocoPhillips,147.41,145.95,0.49
+2026-10-21,US,CRL,Charles River Laboratories,348.95,315.45,5.14
+2026-10-21,US,CTAS,Cintas,220.64,217.03,2.23
+2026-10-21,US,CVX,Chevron Corporation,228.48,225.71,0.6
+2026-10-21,US,ELV,Elevance Health,450.69,440.18,2.31
+2026-10-21,US,FDS,FactSet,320.7,312.27,2.99
+2026-10-21,US,HAS,Hasbro,114.05,109.52,11.2
+2026-10-21,US,HLT,Hilton Worldwide,364.5,359.29,3.83
+2026-10-21,US,MA,Mastercard,624.66,620.42,0.65
+2026-10-21,US,MET,MetLife,102.57,101.18,1.61
+2026-10-21,US,MRNA,Moderna,254.48,242.08,6.69
+2026-10-21,US,MTD,Mettler Toledo,1681.26,1634.01,0.51
+2026-10-21,US,TMO,Thermo Fisher Scientific,705.78,687.37,1.18
+2026-10-21,US,TRV,Travelers Companies (The),399.71,395.73,2.67
+2026-10-21,US,V,Visa Inc.,409.53,406.57,0.91
+2026-10-21,US,VEEV,Veeva Systems,322.99,318.67,0.59
+2026-10-21,US,WAT,Waters Corporation,459.62,442.83,1.97
+2026-10-21,US,WST,West Pharmaceutical Services,396.0,388.78,1.27
+2026-10-21,US,ZBRA,Zebra Technologies,392.78,384.08,2.21
