@@ -1,13 +1,13 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-10-27,US,A,Agilent Technologies,179.1,175.96,1.67
-2026-10-27,US,CRL,Charles River Laboratories,359.85,357.27,3.45
-2026-10-27,US,EMR,Emerson Electric,166.6,161.7,0.07
-2026-10-27,US,HAS,Hasbro,119.32,117.96,0.44
-2026-10-27,US,IQV,IQVIA,284.5,273.6,-2.06
-2026-10-27,US,NDAQ,"Nasdaq, Inc.",105.45,104.72,2.11
-2026-10-27,US,TECH,Bio-Techne,72.75,72.69,0.19
-2026-10-27,US,URI,United Rentals,1179.62,1121.9,2.09
-2026-10-27,US,VTRS,Viatris,18.83,18.29,1.61
-2026-10-27,US,WAT,Waters Corporation,470.85,455.98,0.51
-2026-10-27,US,WST,West Pharmaceutical Services,398.67,394.73,0.66
-2026-10-27,US,XOM,ExxonMobil,184.88,184.54,0.73
+2026-10-28,US,A,Agilent Technologies,181.0,180.58,1.74
+2026-10-28,US,BIIB,Biogen,257.01,255.58,1.13
+2026-10-28,US,CRL,Charles River Laboratories,374.27,372.45,3.79
+2026-10-28,US,EMR,Emerson Electric,168.62,167.79,0.91
+2026-10-28,US,FTV,Fortive,67.01,66.68,8.21
+2026-10-28,US,LH,Labcorp,365.55,358.62,8.29
+2026-10-28,US,RVTY,Revvity,167.55,167.49,3.48
+2026-10-28,US,TMO,Thermo Fisher Scientific,706.99,705.97,1.87
+2026-10-28,US,URI,United Rentals,1186.04,1176.41,1.24
+2026-10-28,US,VTRS,Viatris,18.87,18.82,0.53
+2026-10-28,US,WAT,Waters Corporation,479.05,478.09,2.04
+2026-10-28,US,WST,West Pharmaceutical Services,401.42,401.31,0.76
