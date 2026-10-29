@@ -15,8 +15,8 @@ JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,29
 US,VLO,Valero Energy,28
 US,PSX,Phillips 66,25
+US,CRL,Charles River Laboratories,19
 US,COP,ConocoPhillips,18
-US,CRL,Charles River Laboratories,18
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,16
 US,WAT,Waters Corporation,15
@@ -31,24 +31,26 @@ US,BIIB,Biogen,12
 US,DELL,Dell Technologies,12
 US,MTD,Mettler Toledo,11
 US,V,Visa Inc.,11
+US,AMGN,Amgen,10
 US,APA,APA Corporation,10
 US,FFIV,"F5, Inc.",10
 US,NTAP,NetApp,10
 US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,TMO,Thermo Fisher Scientific,10
-US,AMGN,Amgen,9
+US,DGX,Quest Diagnostics,9
 US,DXCM,Dexcom,9
 US,EOG,EOG Resources,9
 US,IVZ,Invesco,9
 US,XOM,ExxonMobil,9
+US,ABBV,AbbVie,8
 US,BAC,Bank of America,8
-US,DGX,Quest Diagnostics,8
 US,HPQ,HP Inc.,8
 US,IFF,International Flavors & Fragrances,8
+US,MA,Mastercard,8
 US,PANW,Palo Alto Networks,8
 US,TECH,Bio-Techne,8
-US,ABBV,AbbVie,7
+US,WST,West Pharmaceutical Services,8
 US,AMD,Advanced Micro Devices,7
 US,AMP,Ameriprise Financial,7
 US,BBY,Best Buy,7
@@ -56,11 +58,10 @@ US,BDX,Becton Dickinson,7
 US,CNC,Centene Corporation,7
 US,HAS,Hasbro,7
 US,HPE,Hewlett Packard Enterprise,7
-US,MA,Mastercard,7
 US,MRK,Merck & Co.,7
 US,PFE,Pfizer,7
 US,TGT,Target Corporation,7
-US,WST,West Pharmaceutical Services,7
+US,VTRS,Viatris,7
 US,ZBRA,Zebra Technologies,7
 US,ADP,Automatic Data Processing,6
 US,ANET,Arista Networks,6
@@ -70,15 +71,15 @@ US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,ILMN,"Illumina, Inc.",6
 US,KDP,Keurig Dr Pepper,6
+US,NDAQ,"Nasdaq, Inc.",6
 US,SWK,Stanley Black & Decker,6
 US,VEEV,Veeva Systems,6
 US,VRTX,Vertex Pharmaceuticals,6
-US,VTRS,Viatris,6
 US,WSM,"Williams-Sonoma, Inc.",6
 US,ABNB,Airbnb,5
 US,MET,MetLife,5
-US,NDAQ,"Nasdaq, Inc.",5
 US,NDSN,Nordson Corporation,5
+US,TRGP,Targa Resources,5
 US,USB,U.S. Bancorp,5
 US,AAPL,Apple Inc.,4
 US,AME,Ametek,4
@@ -86,6 +87,7 @@ US,CAH,Cardinal Health,4
 US,CTAS,Cintas,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
+US,EMR,Emerson Electric,4
 US,FAST,Fastenal,4
 US,GRMN,Garmin,4
 US,JCI,Johnson Controls,4
@@ -93,17 +95,18 @@ US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
 US,KO,Coca-Cola Company (The),4
 US,LITE,Lumentum,4
+US,LLY,Lilly (Eli),4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
-US,TRGP,Targa Resources,4
 US,BEN,Franklin Resources,3
-US,EMR,Emerson Electric,3
+US,ED,Consolidated Edison,3
+US,EG,Everest Group,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
+US,GILD,Gilead Sciences,3
 US,GPN,Global Payments,3
-US,LLY,Lilly (Eli),3
 US,MCK,McKesson,3
 US,NVDA,Nvidia,3
 US,OKE,Oneok,3
@@ -120,12 +123,9 @@ US,CDW,CDW Corporation,2
 US,CFG,Citizens Financial Group,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
-US,ED,Consolidated Edison,2
-US,EG,Everest Group,2
 US,ELV,Elevance Health,2
 US,FDS,FactSet,2
 US,GE,GE Aerospace,2
-US,GILD,Gilead Sciences,2
 US,HLT,Hilton Worldwide,2
 US,JNJ,Johnson & Johnson,2
 US,LYV,Live Nation Entertainment,2
@@ -145,6 +145,7 @@ US,SWKS,Skyworks Solutions,2
 US,TPR,"Tapestry, Inc.",2
 US,TRV,Travelers Companies (The),2
 US,ADM,Archer Daniels Midland,1
+US,ALLE,Allegion,1
 US,AMT,American Tower,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
@@ -156,6 +157,7 @@ US,EBAY,eBay Inc.,1
 US,FANG,Diamondback Energy,1
 US,FTV,Fortive,1
 US,HSIC,Henry Schein,1
+US,HST,Host Hotels & Resorts,1
 US,HUM,Humana,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
