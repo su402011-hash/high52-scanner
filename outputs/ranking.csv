@@ -29,20 +29,21 @@ US,MRNA,Moderna,13
 US,A,Agilent Technologies,12
 US,BIIB,Biogen,12
 US,DELL,Dell Technologies,12
+US,MTD,Mettler Toledo,11
 US,V,Visa Inc.,11
 US,APA,APA Corporation,10
 US,FFIV,"F5, Inc.",10
-US,MTD,Mettler Toledo,10
 US,NTAP,NetApp,10
 US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,TMO,Thermo Fisher Scientific,10
+US,AMGN,Amgen,9
 US,DXCM,Dexcom,9
 US,EOG,EOG Resources,9
 US,IVZ,Invesco,9
 US,XOM,ExxonMobil,9
-US,AMGN,Amgen,8
 US,BAC,Bank of America,8
+US,DGX,Quest Diagnostics,8
 US,HPQ,HP Inc.,8
 US,IFF,International Flavors & Fragrances,8
 US,PANW,Palo Alto Networks,8
@@ -53,7 +54,7 @@ US,AMP,Ameriprise Financial,7
 US,BBY,Best Buy,7
 US,BDX,Becton Dickinson,7
 US,CNC,Centene Corporation,7
-US,DGX,Quest Diagnostics,7
+US,HAS,Hasbro,7
 US,HPE,Hewlett Packard Enterprise,7
 US,MA,Mastercard,7
 US,MRK,Merck & Co.,7
@@ -67,7 +68,6 @@ US,BRK-B,Berkshire Hathaway,6
 US,CPAY,Corpay,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
-US,HAS,Hasbro,6
 US,ILMN,"Illumina, Inc.",6
 US,KDP,Keurig Dr Pepper,6
 US,SWK,Stanley Black & Decker,6
@@ -77,6 +77,7 @@ US,VTRS,Viatris,6
 US,WSM,"Williams-Sonoma, Inc.",6
 US,ABNB,Airbnb,5
 US,MET,MetLife,5
+US,NDAQ,"Nasdaq, Inc.",5
 US,NDSN,Nordson Corporation,5
 US,USB,U.S. Bancorp,5
 US,AAPL,Apple Inc.,4
@@ -92,11 +93,11 @@ US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
 US,KO,Coca-Cola Company (The),4
 US,LITE,Lumentum,4
-US,NDAQ,"Nasdaq, Inc.",4
 US,PFG,Principal Financial Group,4
 US,REGN,Regeneron Pharmaceuticals,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
+US,TRGP,Targa Resources,4
 US,BEN,Franklin Resources,3
 US,EMR,Emerson Electric,3
 US,FCX,Freeport-McMoRan,3
@@ -109,7 +110,6 @@ US,OKE,Oneok,3
 US,OMC,Omnicom Group,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
-US,TRGP,Targa Resources,3
 US,URI,United Rentals,3
 US,WBD,Warner Bros. Discovery,3
 US,XYZ,"Block, Inc.",3
@@ -125,6 +125,7 @@ US,EG,Everest Group,2
 US,ELV,Elevance Health,2
 US,FDS,FactSet,2
 US,GE,GE Aerospace,2
+US,GILD,Gilead Sciences,2
 US,HLT,Hilton Worldwide,2
 US,JNJ,Johnson & Johnson,2
 US,LYV,Live Nation Entertainment,2
@@ -154,7 +155,6 @@ US,DVA,DaVita,1
 US,EBAY,eBay Inc.,1
 US,FANG,Diamondback Energy,1
 US,FTV,Fortive,1
-US,GILD,Gilead Sciences,1
 US,HSIC,Henry Schein,1
 US,HUM,Humana,1
 US,HWM,Howmet Aerospace,1
