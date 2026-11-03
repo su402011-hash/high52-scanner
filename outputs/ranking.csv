@@ -47,11 +47,12 @@ US,ABBV,AbbVie,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
+US,PFE,Pfizer,9
 US,BAC,Bank of America,8
 US,BRK-B,Berkshire Hathaway,8
 US,HPQ,HP Inc.,8
+US,KDP,Keurig Dr Pepper,8
 US,PANW,Palo Alto Networks,8
-US,PFE,Pfizer,8
 US,SWK,Stanley Black & Decker,8
 US,TECH,Bio-Techne,8
 US,VRTX,Vertex Pharmaceuticals,8
@@ -64,7 +65,6 @@ US,BDX,Becton Dickinson,7
 US,CNC,Centene Corporation,7
 US,HAS,Hasbro,7
 US,HPE,Hewlett Packard Enterprise,7
-US,KDP,Keurig Dr Pepper,7
 US,MRK,Merck & Co.,7
 US,NDAQ,"Nasdaq, Inc.",7
 US,TGT,Target Corporation,7
@@ -82,7 +82,9 @@ US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
 US,ABNB,Airbnb,5
 US,CAH,Cardinal Health,5
+US,ED,Consolidated Edison,5
 US,EG,Everest Group,5
+US,KO,Coca-Cola Company (The),5
 US,LLY,Lilly (Eli),5
 US,MET,MetLife,5
 US,NDSN,Nordson Corporation,5
@@ -93,7 +95,6 @@ US,AME,Ametek,4
 US,CTAS,Cintas,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
-US,ED,Consolidated Edison,4
 US,EMR,Emerson Electric,4
 US,GILD,Gilead Sciences,4
 US,GPN,Global Payments,4
@@ -101,13 +102,13 @@ US,GRMN,Garmin,4
 US,JCI,Johnson Controls,4
 US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
-US,KO,Coca-Cola Company (The),4
 US,LITE,Lumentum,4
 US,MRSH,Marsh McLennan,4
 US,PFG,Principal Financial Group,4
 US,RJF,Raymond James Financial,4
 US,SOLV,Solventum,4
 US,ALLE,Allegion,3
+US,AWK,American Water Works,3
 US,BEN,Franklin Resources,3
 US,FCX,Freeport-McMoRan,3
 US,FDS,FactSet,3
@@ -129,9 +130,9 @@ US,XYZ,"Block, Inc.",3
 US,AIZ,Assurant,2
 US,AJG,Arthur J. Gallagher & Co.,2
 US,APD,Air Products,2
-US,AWK,American Water Works,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
+US,CB,Chubb Limited,2
 US,CDW,CDW Corporation,2
 US,CFG,Citizens Financial Group,2
 US,CHD,Church & Dwight,2
@@ -160,7 +161,6 @@ US,ADM,Archer Daniels Midland,1
 US,AMT,American Tower,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
-US,CB,Chubb Limited,1
 US,CI,Cigna,1
 US,DVA,DaVita,1
 US,EBAY,eBay Inc.,1
