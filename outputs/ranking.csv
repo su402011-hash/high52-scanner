@@ -19,7 +19,7 @@ US,PSX,Phillips 66,25
 US,COP,ConocoPhillips,19
 US,CRL,Charles River Laboratories,19
 US,CRWD,CrowdStrike,18
-US,RVTY,Revvity,16
+US,RVTY,Revvity,17
 US,CVX,Chevron Corporation,15
 US,EXPD,Expeditors International,15
 US,WAT,Waters Corporation,15
@@ -41,13 +41,13 @@ US,FFIV,"F5, Inc.",10
 US,MA,Mastercard,10
 US,NTAP,NetApp,10
 US,P,Everpure,10
+US,PFE,Pfizer,10
 US,SCHW,Charles Schwab Corporation,10
 US,XOM,ExxonMobil,10
 US,ABBV,AbbVie,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
-US,PFE,Pfizer,9
 US,BAC,Bank of America,8
 US,BRK-B,Berkshire Hathaway,8
 US,HPQ,HP Inc.,8
@@ -73,6 +73,7 @@ US,ZBRA,Zebra Technologies,7
 US,ADP,Automatic Data Processing,6
 US,ANET,Arista Networks,6
 US,CPAY,Corpay,6
+US,EG,Everest Group,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,FAST,Fastenal,6
@@ -83,7 +84,6 @@ US,VEEV,Veeva Systems,6
 US,ABNB,Airbnb,5
 US,CAH,Cardinal Health,5
 US,ED,Consolidated Edison,5
-US,EG,Everest Group,5
 US,KO,Coca-Cola Company (The),5
 US,LLY,Lilly (Eli),5
 US,MET,MetLife,5
