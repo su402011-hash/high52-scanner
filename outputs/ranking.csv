@@ -9,9 +9,9 @@ JP,6857.T,アドバンテスト,6
 JP,8001.T,伊藤忠商事,4
 JP,8411.T,みずほFG,4
 JP,8766.T,東京海上HD,3
+JP,4661.T,OLC,2
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
-JP,4661.T,OLC,1
 JP,6752.T,パナソニックHD,1
 US,MPC,Marathon Petroleum,29
 US,VLO,Valero Energy,28
@@ -20,8 +20,8 @@ US,COP,ConocoPhillips,19
 US,CRL,Charles River Laboratories,19
 US,CRWD,CrowdStrike,18
 US,RVTY,Revvity,17
+US,EXPD,Expeditors International,16
 US,CVX,Chevron Corporation,15
-US,EXPD,Expeditors International,15
 US,WAT,Waters Corporation,15
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
@@ -45,11 +45,11 @@ US,PFE,Pfizer,10
 US,SCHW,Charles Schwab Corporation,10
 US,XOM,ExxonMobil,10
 US,ABBV,AbbVie,9
+US,BRK-B,Berkshire Hathaway,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
 US,BAC,Bank of America,8
-US,BRK-B,Berkshire Hathaway,8
 US,HPQ,HP Inc.,8
 US,KDP,Keurig Dr Pepper,8
 US,PANW,Palo Alto Networks,8
@@ -67,6 +67,7 @@ US,HAS,Hasbro,7
 US,HPE,Hewlett Packard Enterprise,7
 US,MRK,Merck & Co.,7
 US,NDAQ,"Nasdaq, Inc.",7
+US,REGN,Regeneron Pharmaceuticals,7
 US,TGT,Target Corporation,7
 US,WSM,"Williams-Sonoma, Inc.",7
 US,ZBRA,Zebra Technologies,7
@@ -78,7 +79,6 @@ US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,FAST,Fastenal,6
 US,ILMN,"Illumina, Inc.",6
-US,REGN,Regeneron Pharmaceuticals,6
 US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
 US,ABNB,Airbnb,5
@@ -112,6 +112,7 @@ US,AWK,American Water Works,3
 US,BEN,Franklin Resources,3
 US,FCX,Freeport-McMoRan,3
 US,FDS,FactSet,3
+US,FTV,Fortive,3
 US,GEN,Gen Digital,3
 US,HLT,Hilton Worldwide,3
 US,JNJ,Johnson & Johnson,3
@@ -125,6 +126,7 @@ US,PKG,Packaging Corporation of America,3
 US,RSG,Republic Services,3
 US,RTX,RTX Corporation,3
 US,TDY,Teledyne Technologies,3
+US,VLTO,Veralto,3
 US,WBD,Warner Bros. Discovery,3
 US,XYZ,"Block, Inc.",3
 US,AIZ,Assurant,2
@@ -139,9 +141,9 @@ US,CHD,Church & Dwight,2
 US,DRI,Darden Restaurants,2
 US,EA,Electronic Arts,2
 US,ELV,Elevance Health,2
-US,FTV,Fortive,2
 US,GE,GE Aerospace,2
 US,HST,Host Hotels & Resorts,2
+US,J,Jacobs Solutions,2
 US,LYV,Live Nation Entertainment,2
 US,META,Meta Platforms,2
 US,MTB,M&T Bank,2
@@ -155,7 +157,7 @@ US,STT,State Street Corporation,2
 US,SWKS,Skyworks Solutions,2
 US,TPR,"Tapestry, Inc.",2
 US,TRV,Travelers Companies (The),2
-US,VLTO,Veralto,2
+US,VRSN,Verisign,2
 US,ACGL,Arch Capital Group,1
 US,ADM,Archer Daniels Midland,1
 US,AMT,American Tower,1
@@ -170,7 +172,6 @@ US,HSIC,Henry Schein,1
 US,HUM,Humana,1
 US,HWM,Howmet Aerospace,1
 US,IBKR,Interactive Brokers,1
-US,J,Jacobs Solutions,1
 US,MAR,Marriott International,1
 US,MAS,Masco,1
 US,MNST,Monster Beverage,1
@@ -184,4 +185,3 @@ US,ROST,Ross Stores,1
 US,SBUX,Starbucks,1
 US,SJM,J.M. Smucker Company (The),1
 US,SLB,Schlumberger,1
-US,VRSN,Verisign,1
