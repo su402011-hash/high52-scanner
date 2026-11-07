@@ -23,12 +23,12 @@ US,CRL,Charles River Laboratories,19
 US,CRWD,CrowdStrike,18
 US,EXPD,Expeditors International,17
 US,RVTY,Revvity,17
+US,MRNA,Moderna,16
 US,CVX,Chevron Corporation,15
-US,MRNA,Moderna,15
+US,MTD,Mettler Toledo,15
 US,V,Visa Inc.,15
 US,WAT,Waters Corporation,15
 US,LH,Labcorp,14
-US,MTD,Mettler Toledo,14
 US,AMGN,Amgen,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
@@ -42,6 +42,7 @@ US,BRK-B,Berkshire Hathaway,11
 US,DGX,Quest Diagnostics,11
 US,PFE,Pfizer,11
 US,ABBV,AbbVie,10
+US,BDX,Becton Dickinson,10
 US,EOG,EOG Resources,10
 US,FFIV,"F5, Inc.",10
 US,KDP,Keurig Dr Pepper,10
@@ -50,7 +51,6 @@ US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,XOM,ExxonMobil,10
 US,BBY,Best Buy,9
-US,BDX,Becton Dickinson,9
 US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
 US,HAS,Hasbro,9
