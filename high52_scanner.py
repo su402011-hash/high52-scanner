@@ -543,7 +543,7 @@ def _setup_rows(prices: dict, names: dict, market: str):
 
         if (rs is not None and rs >= SETUP_RS_MIN
                 and pos >= SETUP_POS_MIN
-                and vc is not None and vc <= SETUP_CONTRACT_MAX
+                and vc is not None and 0.10 <= vc <= SETUP_CONTRACT_MAX
                 and vr is not None and vr <= SETUP_VOLRATIO_MAX):
             setups.append(dict(base, タイプ="ブレイク待ち"))
 
