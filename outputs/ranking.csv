@@ -42,6 +42,7 @@ US,APA,APA Corporation,11
 US,BDX,Becton Dickinson,11
 US,BRK-B,Berkshire Hathaway,11
 US,PFE,Pfizer,11
+US,VTRS,Viatris,11
 US,ABBV,AbbVie,10
 US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
@@ -51,7 +52,6 @@ US,NTAP,NetApp,10
 US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,TECH,Bio-Techne,10
-US,VTRS,Viatris,10
 US,XOM,ExxonMobil,10
 US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
@@ -82,6 +82,7 @@ US,TGT,Target Corporation,7
 US,ZBRA,Zebra Technologies,7
 US,AAPL,Apple Inc.,6
 US,ABNB,Airbnb,6
+US,AIZ,Assurant,6
 US,ANET,Arista Networks,6
 US,CTAS,Cintas,6
 US,ETN,Eaton Corporation,6
@@ -92,12 +93,13 @@ US,MET,MetLife,6
 US,MRSH,Marsh McLennan,6
 US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
-US,AIZ,Assurant,5
 US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,EMR,Emerson Electric,5
 US,GILD,Gilead Sciences,5
+US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
+US,JNJ,Johnson & Johnson,5
 US,MCK,McKesson,5
 US,NDSN,Nordson Corporation,5
 US,URI,United Rentals,5
@@ -113,11 +115,9 @@ US,DE,Deere & Company,4
 US,DRI,Darden Restaurants,4
 US,FDS,FactSet,4
 US,FTV,Fortive,4
-US,GPN,Global Payments,4
 US,GRMN,Garmin,4
 US,HST,Host Hotels & Resorts,4
 US,JCI,Johnson Controls,4
-US,JNJ,Johnson & Johnson,4
 US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
 US,LITE,Lumentum,4
@@ -174,6 +174,7 @@ US,PLTR,Palantir Technologies,2
 US,PM,Philip Morris International,2
 US,PNC,PNC Financial Services,2
 US,PSA,Public Storage,2
+US,PTC,PTC Inc.,2
 US,SBUX,Starbucks,2
 US,SJM,J.M. Smucker Company (The),2
 US,SNA,Snap-on,2
@@ -206,7 +207,6 @@ US,NTRS,Northern Trust,1
 US,NWSA,News Corp (Class A),1
 US,PGR,Progressive Corporation,1
 US,PH,Parker Hannifin,1
-US,PTC,PTC Inc.,1
 US,ROST,Ross Stores,1
 US,SLB,Schlumberger,1
 US,WEC,WEC Energy Group,1
