@@ -25,22 +25,22 @@ US,EXPD,Expeditors International,17
 US,MRNA,Moderna,17
 US,RVTY,Revvity,17
 US,CVX,Chevron Corporation,15
+US,LH,Labcorp,15
 US,MTD,Mettler Toledo,15
 US,V,Visa Inc.,15
 US,WAT,Waters Corporation,15
-US,LH,Labcorp,14
 US,AMGN,Amgen,13
+US,BIIB,Biogen,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
+US,TMO,Thermo Fisher Scientific,13
 US,A,Agilent Technologies,12
-US,BIIB,Biogen,12
 US,DELL,Dell Technologies,12
+US,DGX,Quest Diagnostics,12
 US,MA,Mastercard,12
-US,TMO,Thermo Fisher Scientific,12
 US,APA,APA Corporation,11
 US,BDX,Becton Dickinson,11
 US,BRK-B,Berkshire Hathaway,11
-US,DGX,Quest Diagnostics,11
 US,PFE,Pfizer,11
 US,ABBV,AbbVie,10
 US,BBY,Best Buy,10
@@ -55,6 +55,7 @@ US,VTRS,Viatris,10
 US,XOM,ExxonMobil,10
 US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
+US,FAST,Fastenal,9
 US,HAS,Hasbro,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
@@ -62,7 +63,6 @@ US,NDAQ,"Nasdaq, Inc.",9
 US,SWK,Stanley Black & Decker,9
 US,WSM,"Williams-Sonoma, Inc.",9
 US,BAC,Bank of America,8
-US,FAST,Fastenal,8
 US,HPQ,HP Inc.,8
 US,PANW,Palo Alto Networks,8
 US,REGN,Regeneron Pharmaceuticals,8
@@ -92,6 +92,7 @@ US,MET,MetLife,6
 US,MRSH,Marsh McLennan,6
 US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
+US,AIZ,Assurant,5
 US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,EMR,Emerson Electric,5
@@ -103,7 +104,6 @@ US,URI,United Rentals,5
 US,USB,U.S. Bancorp,5
 US,VLTO,Veralto,5
 US,XYZ,"Block, Inc.",5
-US,AIZ,Assurant,4
 US,AJG,Arthur J. Gallagher & Co.,4
 US,AME,Ametek,4
 US,CB,Chubb Limited,4
@@ -117,6 +117,7 @@ US,GPN,Global Payments,4
 US,GRMN,Garmin,4
 US,HST,Host Hotels & Resorts,4
 US,JCI,Johnson Controls,4
+US,JNJ,Johnson & Johnson,4
 US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
 US,LITE,Lumentum,4
@@ -139,7 +140,6 @@ US,EW,Edwards Lifesciences,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
 US,J,Jacobs Solutions,3
-US,JNJ,Johnson & Johnson,3
 US,NUE,Nucor,3
 US,NVDA,Nvidia,3
 US,OKE,Oneok,3
@@ -206,6 +206,7 @@ US,NTRS,Northern Trust,1
 US,NWSA,News Corp (Class A),1
 US,PGR,Progressive Corporation,1
 US,PH,Parker Hannifin,1
+US,PTC,PTC Inc.,1
 US,ROST,Ross Stores,1
 US,SLB,Schlumberger,1
 US,WEC,WEC Energy Group,1
