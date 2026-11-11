@@ -6,7 +6,7 @@ JP,4502.T,武田薬品,9
 JP,7267.T,ホンダ,9
 JP,2914.T,JT,8
 JP,6857.T,アドバンテスト,6
-JP,8001.T,伊藤忠商事,5
+JP,8001.T,伊藤忠商事,6
 JP,4661.T,OLC,4
 JP,8411.T,みずほFG,4
 JP,8766.T,東京海上HD,4
@@ -35,12 +35,12 @@ US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
 US,TMO,Thermo Fisher Scientific,13
 US,A,Agilent Technologies,12
+US,BRK-B,Berkshire Hathaway,12
 US,DELL,Dell Technologies,12
 US,DGX,Quest Diagnostics,12
 US,MA,Mastercard,12
 US,APA,APA Corporation,11
 US,BDX,Becton Dickinson,11
-US,BRK-B,Berkshire Hathaway,11
 US,PFE,Pfizer,11
 US,VTRS,Viatris,11
 US,ABBV,AbbVie,10
@@ -108,6 +108,7 @@ US,VLTO,Veralto,5
 US,XYZ,"Block, Inc.",5
 US,AJG,Arthur J. Gallagher & Co.,4
 US,AME,Ametek,4
+US,BEN,Franklin Resources,4
 US,CB,Chubb Limited,4
 US,CHD,Church & Dwight,4
 US,DDOG,Datadog,4
@@ -132,7 +133,6 @@ US,TRV,Travelers Companies (The),4
 US,VRSN,Verisign,4
 US,ACGL,Arch Capital Group,3
 US,APD,Air Products,3
-US,BEN,Franklin Resources,3
 US,CDW,CDW Corporation,3
 US,EBAY,eBay Inc.,3
 US,ECL,Ecolab,3
