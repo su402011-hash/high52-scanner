@@ -24,28 +24,29 @@ US,CRWD,CrowdStrike,18
 US,EXPD,Expeditors International,17
 US,MRNA,Moderna,17
 US,RVTY,Revvity,17
+US,WAT,Waters Corporation,16
 US,CVX,Chevron Corporation,15
 US,LH,Labcorp,15
 US,MTD,Mettler Toledo,15
 US,V,Visa Inc.,15
-US,WAT,Waters Corporation,15
+US,TMO,Thermo Fisher Scientific,14
 US,AMGN,Amgen,13
 US,BIIB,Biogen,13
+US,DGX,Quest Diagnostics,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
-US,TMO,Thermo Fisher Scientific,13
 US,A,Agilent Technologies,12
 US,BRK-B,Berkshire Hathaway,12
 US,DELL,Dell Technologies,12
-US,DGX,Quest Diagnostics,12
 US,MA,Mastercard,12
+US,VTRS,Viatris,12
 US,APA,APA Corporation,11
 US,BDX,Becton Dickinson,11
 US,PFE,Pfizer,11
-US,VTRS,Viatris,11
 US,ABBV,AbbVie,10
 US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
+US,FAST,Fastenal,10
 US,FFIV,"F5, Inc.",10
 US,KDP,Keurig Dr Pepper,10
 US,NTAP,NetApp,10
@@ -55,7 +56,6 @@ US,TECH,Bio-Techne,10
 US,XOM,ExxonMobil,10
 US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
-US,FAST,Fastenal,9
 US,HAS,Hasbro,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
@@ -110,6 +110,7 @@ US,AJG,Arthur J. Gallagher & Co.,4
 US,AME,Ametek,4
 US,BEN,Franklin Resources,4
 US,CB,Chubb Limited,4
+US,CDW,CDW Corporation,4
 US,CHD,Church & Dwight,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
@@ -133,7 +134,6 @@ US,TRV,Travelers Companies (The),4
 US,VRSN,Verisign,4
 US,ACGL,Arch Capital Group,3
 US,APD,Air Products,3
-US,CDW,CDW Corporation,3
 US,EBAY,eBay Inc.,3
 US,ECL,Ecolab,3
 US,EW,Edwards Lifesciences,3
@@ -189,6 +189,7 @@ US,AMZN,Amazon,1
 US,APH,Amphenol,1
 US,BALL,Ball Corporation,1
 US,CINF,Cincinnati Financial,1
+US,DD,DuPont,1
 US,DVA,DaVita,1
 US,EVRG,Evergy,1
 US,FANG,Diamondback Energy,1
@@ -209,6 +210,7 @@ US,PGR,Progressive Corporation,1
 US,PH,Parker Hannifin,1
 US,ROST,Ross Stores,1
 US,SLB,Schlumberger,1
+US,WAB,Wabtec,1
 US,WEC,WEC Energy Group,1
 US,WRB,W. R. Berkley Corporation,1
 US,ZBH,Zimmer Biomet,1
