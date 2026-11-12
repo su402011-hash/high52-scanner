@@ -24,30 +24,30 @@ US,CRWD,CrowdStrike,18
 US,EXPD,Expeditors International,17
 US,MRNA,Moderna,17
 US,RVTY,Revvity,17
+US,LH,Labcorp,16
 US,WAT,Waters Corporation,16
 US,CVX,Chevron Corporation,15
-US,LH,Labcorp,15
 US,MTD,Mettler Toledo,15
 US,V,Visa Inc.,15
+US,BRK-B,Berkshire Hathaway,14
+US,DGX,Quest Diagnostics,14
 US,TMO,Thermo Fisher Scientific,14
 US,AMGN,Amgen,13
 US,BIIB,Biogen,13
-US,BRK-B,Berkshire Hathaway,13
-US,DGX,Quest Diagnostics,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
+US,VTRS,Viatris,13
 US,A,Agilent Technologies,12
+US,BDX,Becton Dickinson,12
 US,DELL,Dell Technologies,12
 US,MA,Mastercard,12
-US,VTRS,Viatris,12
 US,APA,APA Corporation,11
-US,BDX,Becton Dickinson,11
+US,FAST,Fastenal,11
 US,KDP,Keurig Dr Pepper,11
 US,PFE,Pfizer,11
 US,ABBV,AbbVie,10
 US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
-US,FAST,Fastenal,10
 US,FFIV,"F5, Inc.",10
 US,HAS,Hasbro,10
 US,NTAP,NetApp,10
@@ -59,19 +59,19 @@ US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
+US,KO,Coca-Cola Company (The),9
 US,NDAQ,"Nasdaq, Inc.",9
 US,SWK,Stanley Black & Decker,9
 US,WSM,"Williams-Sonoma, Inc.",9
+US,AAPL,Apple Inc.,8
+US,ADP,Automatic Data Processing,8
+US,AIZ,Assurant,8
 US,BAC,Bank of America,8
 US,HPQ,HP Inc.,8
-US,KO,Coca-Cola Company (The),8
 US,PANW,Palo Alto Networks,8
 US,REGN,Regeneron Pharmaceuticals,8
 US,VRTX,Vertex Pharmaceuticals,8
 US,WST,West Pharmaceutical Services,8
-US,AAPL,Apple Inc.,7
-US,ADP,Automatic Data Processing,7
-US,AIZ,Assurant,7
 US,AMD,Advanced Micro Devices,7
 US,AMP,Ameriprise Financial,7
 US,CAH,Cardinal Health,7
@@ -79,6 +79,7 @@ US,CPAY,Corpay,7
 US,ED,Consolidated Edison,7
 US,EG,Everest Group,7
 US,HPE,Hewlett Packard Enterprise,7
+US,LLY,Lilly (Eli),7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
 US,ZBRA,Zebra Technologies,7
@@ -88,23 +89,23 @@ US,CTAS,Cintas,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,ILMN,"Illumina, Inc.",6
-US,LLY,Lilly (Eli),6
+US,JNJ,Johnson & Johnson,6
 US,MET,MetLife,6
 US,MRSH,Marsh McLennan,6
 US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
+US,VLTO,Veralto,6
 US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,EMR,Emerson Electric,5
+US,EW,Edwards Lifesciences,5
 US,GILD,Gilead Sciences,5
 US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
-US,JNJ,Johnson & Johnson,5
 US,MCK,McKesson,5
 US,NDSN,Nordson Corporation,5
 US,URI,United Rentals,5
 US,USB,U.S. Bancorp,5
-US,VLTO,Veralto,5
 US,XYZ,"Block, Inc.",5
 US,AJG,Arthur J. Gallagher & Co.,4
 US,AME,Ametek,4
@@ -115,7 +116,6 @@ US,CHD,Church & Dwight,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
 US,DRI,Darden Restaurants,4
-US,EW,Edwards Lifesciences,4
 US,FDS,FactSet,4
 US,FTV,Fortive,4
 US,GRMN,Garmin,4
@@ -139,6 +139,7 @@ US,EBAY,eBay Inc.,3
 US,ECL,Ecolab,3
 US,FCX,Freeport-McMoRan,3
 US,GEN,Gen Digital,3
+US,ICE,Intercontinental Exchange,3
 US,J,Jacobs Solutions,3
 US,NUE,Nucor,3
 US,NVDA,Nvidia,3
@@ -151,6 +152,7 @@ US,WBD,Warner Bros. Discovery,3
 US,BLK,BlackRock,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
+US,CBOE,Cboe Global Markets,2
 US,CFG,Citizens Financial Group,2
 US,CI,Cigna,2
 US,CL,Colgate-Palmolive,2
@@ -160,7 +162,6 @@ US,EA,Electronic Arts,2
 US,ELV,Elevance Health,2
 US,EXR,Extra Space Storage,2
 US,GE,GE Aerospace,2
-US,ICE,Intercontinental Exchange,2
 US,LYV,Live Nation Entertainment,2
 US,MAS,Masco,2
 US,MDLZ,Mondelez International,2
@@ -189,8 +190,8 @@ US,AMT,American Tower,1
 US,AMZN,Amazon,1
 US,APH,Amphenol,1
 US,BALL,Ball Corporation,1
-US,CBOE,Cboe Global Markets,1
 US,CINF,Cincinnati Financial,1
+US,COST,Costco,1
 US,DD,DuPont,1
 US,DVA,DaVita,1
 US,EVRG,Evergy,1
