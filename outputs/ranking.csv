@@ -33,12 +33,12 @@ US,BRK-B,Berkshire Hathaway,14
 US,DGX,Quest Diagnostics,14
 US,TMO,Thermo Fisher Scientific,14
 US,AMGN,Amgen,13
+US,BDX,Becton Dickinson,13
 US,BIIB,Biogen,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
 US,VTRS,Viatris,13
 US,A,Agilent Technologies,12
-US,BDX,Becton Dickinson,12
 US,DELL,Dell Technologies,12
 US,MA,Mastercard,12
 US,APA,APA Corporation,11
@@ -50,20 +50,20 @@ US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
 US,FFIV,"F5, Inc.",10
 US,HAS,Hasbro,10
+US,KO,Coca-Cola Company (The),10
 US,NTAP,NetApp,10
 US,P,Everpure,10
 US,SCHW,Charles Schwab Corporation,10
 US,TECH,Bio-Techne,10
 US,XOM,ExxonMobil,10
+US,AAPL,Apple Inc.,9
 US,CNC,Centene Corporation,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
-US,KO,Coca-Cola Company (The),9
 US,NDAQ,"Nasdaq, Inc.",9
 US,SWK,Stanley Black & Decker,9
 US,WSM,"Williams-Sonoma, Inc.",9
-US,AAPL,Apple Inc.,8
 US,ADP,Automatic Data Processing,8
 US,AIZ,Assurant,8
 US,BAC,Bank of America,8
@@ -79,6 +79,7 @@ US,CPAY,Corpay,7
 US,ED,Consolidated Edison,7
 US,EG,Everest Group,7
 US,HPE,Hewlett Packard Enterprise,7
+US,JNJ,Johnson & Johnson,7
 US,LLY,Lilly (Eli),7
 US,MRK,Merck & Co.,7
 US,TGT,Target Corporation,7
@@ -87,9 +88,9 @@ US,ABNB,Airbnb,6
 US,ANET,Arista Networks,6
 US,CTAS,Cintas,6
 US,ETN,Eaton Corporation,6
+US,EW,Edwards Lifesciences,6
 US,EXPE,Expedia Group,6
 US,ILMN,"Illumina, Inc.",6
-US,JNJ,Johnson & Johnson,6
 US,MET,MetLife,6
 US,MRSH,Marsh McLennan,6
 US,TRGP,Targa Resources,6
@@ -98,12 +99,12 @@ US,VLTO,Veralto,6
 US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,EMR,Emerson Electric,5
-US,EW,Edwards Lifesciences,5
 US,GILD,Gilead Sciences,5
 US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
 US,MCK,McKesson,5
 US,NDSN,Nordson Corporation,5
+US,RSG,Republic Services,5
 US,URI,United Rentals,5
 US,USB,U.S. Bancorp,5
 US,XYZ,"Block, Inc.",5
@@ -129,7 +130,6 @@ US,PFG,Principal Financial Group,4
 US,PKG,Packaging Corporation of America,4
 US,RJF,Raymond James Financial,4
 US,ROP,Roper Technologies,4
-US,RSG,Republic Services,4
 US,SOLV,Solventum,4
 US,TRV,Travelers Companies (The),4
 US,VRSN,Verisign,4
@@ -157,6 +157,7 @@ US,CBOE,Cboe Global Markets,2
 US,CFG,Citizens Financial Group,2
 US,CI,Cigna,2
 US,CL,Colgate-Palmolive,2
+US,COST,Costco,2
 US,DIS,Walt Disney Company (The),2
 US,DLTR,Dollar Tree,2
 US,EA,Electronic Arts,2
@@ -191,7 +192,6 @@ US,AMZN,Amazon,1
 US,APH,Amphenol,1
 US,BALL,Ball Corporation,1
 US,CINF,Cincinnati Financial,1
-US,COST,Costco,1
 US,DD,DuPont,1
 US,DVA,DaVita,1
 US,EVRG,Evergy,1
