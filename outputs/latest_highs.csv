@@ -1,9 +1,10 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-11-13,JP,4661.T,OLC,3839.0,3757.0,1.82
-2026-11-13,US,AAPL,Apple Inc.,360.83,358.36,0.98
-2026-11-13,US,BDX,Becton Dickinson,218.51,217.96,1.04
-2026-11-13,US,COST,Costco,1106.23,1100.99,0.8
-2026-11-13,US,EW,Edwards Lifesciences,107.11,106.55,0.71
-2026-11-13,US,JNJ,Johnson & Johnson,286.47,285.46,0.68
-2026-11-13,US,KO,Coca-Cola Company (The),98.87,98.48,1.07
-2026-11-13,US,RSG,Republic Services,254.62,253.53,0.21
+2026-11-13,JP,4661.T,OLC,3839.0,3813.0,1.49
+2026-11-13,US,AAPL,Apple Inc.,360.83,356.27,0.39
+2026-11-13,US,BDX,Becton Dickinson,219.78,218.03,1.08
+2026-11-13,US,COST,Costco,1109.5,1106.21,1.28
+2026-11-13,US,EW,Edwards Lifesciences,107.69,107.15,1.28
+2026-11-13,US,JNJ,Johnson & Johnson,288.11,285.75,0.79
+2026-11-13,US,KO,Coca-Cola Company (The),99.3,99.25,1.86
+2026-11-13,US,PG,Procter & Gamble,170.73,169.8,1.05
+2026-11-13,US,RSG,Republic Services,255.39,252.99,-0.0
