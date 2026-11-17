@@ -100,12 +100,14 @@ US,VEEV,Veeva Systems,6
 US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,CHD,Church & Dwight,5
+US,DRI,Darden Restaurants,5
 US,EMR,Emerson Electric,5
 US,GILD,Gilead Sciences,5
 US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
 US,MCK,McKesson,5
 US,NDSN,Nordson Corporation,5
+US,PG,Procter & Gamble,5
 US,URI,United Rentals,5
 US,USB,U.S. Bancorp,5
 US,XYZ,"Block, Inc.",5
@@ -114,9 +116,9 @@ US,AME,Ametek,4
 US,BEN,Franklin Resources,4
 US,CB,Chubb Limited,4
 US,CDW,CDW Corporation,4
+US,COST,Costco,4
 US,DDOG,Datadog,4
 US,DE,Deere & Company,4
-US,DRI,Darden Restaurants,4
 US,FDS,FactSet,4
 US,FTV,Fortive,4
 US,GRMN,Garmin,4
@@ -127,7 +129,6 @@ US,KEYS,Keysight Technologies,4
 US,LITE,Lumentum,4
 US,MSI,Motorola Solutions,4
 US,PFG,Principal Financial Group,4
-US,PG,Procter & Gamble,4
 US,PKG,Packaging Corporation of America,4
 US,RJF,Raymond James Financial,4
 US,ROP,Roper Technologies,4
@@ -138,7 +139,7 @@ US,ACGL,Arch Capital Group,3
 US,APD,Air Products,3
 US,CBOE,Cboe Global Markets,3
 US,CL,Colgate-Palmolive,3
-US,COST,Costco,3
+US,DIS,Walt Disney Company (The),3
 US,EBAY,eBay Inc.,3
 US,ECL,Ecolab,3
 US,FCX,Freeport-McMoRan,3
@@ -162,7 +163,6 @@ US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
 US,CFG,Citizens Financial Group,2
 US,CI,Cigna,2
-US,DIS,Walt Disney Company (The),2
 US,DLTR,Dollar Tree,2
 US,EA,Electronic Arts,2
 US,ELV,Elevance Health,2
