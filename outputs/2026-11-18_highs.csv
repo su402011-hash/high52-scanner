@@ -1,0 +1,4 @@
+﻿date,market,ticker,name,high,close,change_pct
+2026-11-17,US,COST,Costco,1123.67,1110.08,-0.33
+2026-11-17,US,DRI,Darden Restaurants,234.12,231.85,0.4
+2026-11-17,US,PG,Procter & Gamble,173.59,171.72,-0.75
