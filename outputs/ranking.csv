@@ -21,24 +21,24 @@ US,PSX,Phillips 66,25
 US,COP,ConocoPhillips,19
 US,CRL,Charles River Laboratories,19
 US,CRWD,CrowdStrike,18
+US,DGX,Quest Diagnostics,17
 US,EXPD,Expeditors International,17
+US,LH,Labcorp,17
 US,MRNA,Moderna,17
 US,RVTY,Revvity,17
-US,DGX,Quest Diagnostics,16
-US,LH,Labcorp,16
 US,WAT,Waters Corporation,16
+US,BDX,Becton Dickinson,15
 US,CVX,Chevron Corporation,15
 US,MTD,Mettler Toledo,15
 US,V,Visa Inc.,15
-US,BDX,Becton Dickinson,14
+US,BIIB,Biogen,14
 US,BRK-B,Berkshire Hathaway,14
 US,TMO,Thermo Fisher Scientific,14
+US,A,Agilent Technologies,13
 US,AMGN,Amgen,13
-US,BIIB,Biogen,13
 US,FTNT,Fortinet,13
 US,IQV,IQVIA,13
 US,VTRS,Viatris,13
-US,A,Agilent Technologies,12
 US,DELL,Dell Technologies,12
 US,MA,Mastercard,12
 US,APA,APA Corporation,11
@@ -65,6 +65,7 @@ US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
 US,NDAQ,"Nasdaq, Inc.",9
 US,SWK,Stanley Black & Decker,9
+US,TGT,Target Corporation,9
 US,WSM,"Williams-Sonoma, Inc.",9
 US,BAC,Bank of America,8
 US,EG,Everest Group,8
@@ -73,7 +74,6 @@ US,JNJ,Johnson & Johnson,8
 US,LLY,Lilly (Eli),8
 US,PANW,Palo Alto Networks,8
 US,REGN,Regeneron Pharmaceuticals,8
-US,TGT,Target Corporation,8
 US,VRTX,Vertex Pharmaceuticals,8
 US,WST,West Pharmaceutical Services,8
 US,AMD,Advanced Micro Devices,7
@@ -92,6 +92,7 @@ US,CTAS,Cintas,6
 US,DRI,Darden Restaurants,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
+US,GILD,Gilead Sciences,6
 US,ILMN,"Illumina, Inc.",6
 US,MET,MetLife,6
 US,MRSH,Marsh McLennan,6
@@ -102,7 +103,6 @@ US,ALLE,Allegion,5
 US,AWK,American Water Works,5
 US,CHD,Church & Dwight,5
 US,EMR,Emerson Electric,5
-US,GILD,Gilead Sciences,5
 US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
 US,MCK,McKesson,5
@@ -140,6 +140,7 @@ US,ACGL,Arch Capital Group,3
 US,APD,Air Products,3
 US,CBOE,Cboe Global Markets,3
 US,CL,Colgate-Palmolive,3
+US,DLTR,Dollar Tree,3
 US,EBAY,eBay Inc.,3
 US,ECL,Ecolab,3
 US,FCX,Freeport-McMoRan,3
@@ -163,7 +164,6 @@ US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
 US,CFG,Citizens Financial Group,2
 US,CI,Cigna,2
-US,DLTR,Dollar Tree,2
 US,EA,Electronic Arts,2
 US,ELV,Elevance Health,2
 US,EVRG,Evergy,2
