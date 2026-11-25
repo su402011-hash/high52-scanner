@@ -1,17 +1,17 @@
 ﻿market,ticker,name,更新回数
 JP,9432.T,NTT,14
-JP,4502.T,武田薬品,12
+JP,4502.T,武田薬品,13
 JP,6098.T,リクルートHD,10
 JP,9101.T,日本郵船,10
 JP,7267.T,ホンダ,9
 JP,2914.T,JT,8
 JP,4661.T,OLC,8
+JP,4523.T,エーザイ,7
 JP,8001.T,伊藤忠商事,7
-JP,4523.T,エーザイ,6
 JP,6857.T,アドバンテスト,6
+JP,9843.T,ニトリHD,5
 JP,8411.T,みずほFG,4
 JP,8766.T,東京海上HD,4
-JP,9843.T,ニトリHD,4
 JP,5401.T,日本製鉄,2
 JP,6861.T,キーエンス,2
 JP,6752.T,パナソニックHD,1
@@ -41,12 +41,12 @@ US,IQV,IQVIA,13
 US,VTRS,Viatris,13
 US,DELL,Dell Technologies,12
 US,MA,Mastercard,12
+US,TECH,Bio-Techne,12
 US,APA,APA Corporation,11
 US,FAST,Fastenal,11
 US,KDP,Keurig Dr Pepper,11
 US,KO,Coca-Cola Company (The),11
 US,PFE,Pfizer,11
-US,TECH,Bio-Techne,11
 US,ABBV,AbbVie,10
 US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
@@ -80,6 +80,7 @@ US,AMD,Advanced Micro Devices,7
 US,AMP,Ameriprise Financial,7
 US,CAH,Cardinal Health,7
 US,CPAY,Corpay,7
+US,DRI,Darden Restaurants,7
 US,ED,Consolidated Edison,7
 US,EW,Edwards Lifesciences,7
 US,HPE,Hewlett Packard Enterprise,7
@@ -89,7 +90,6 @@ US,ZBRA,Zebra Technologies,7
 US,ABNB,Airbnb,6
 US,ANET,Arista Networks,6
 US,CTAS,Cintas,6
-US,DRI,Darden Restaurants,6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,GILD,Gilead Sciences,6
