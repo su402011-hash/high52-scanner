@@ -44,43 +44,44 @@ US,DELL,Dell Technologies,12
 US,MA,Mastercard,12
 US,TECH,Bio-Techne,12
 US,ABBV,AbbVie,11
+US,AIZ,Assurant,11
 US,APA,APA Corporation,11
 US,FAST,Fastenal,11
 US,KDP,Keurig Dr Pepper,11
 US,KO,Coca-Cola Company (The),11
 US,PFE,Pfizer,11
 US,ADP,Automatic Data Processing,10
-US,AIZ,Assurant,10
 US,BBY,Best Buy,10
 US,EOG,EOG Resources,10
 US,FFIV,"F5, Inc.",10
 US,HAS,Hasbro,10
 US,NTAP,NetApp,10
 US,P,Everpure,10
+US,REGN,Regeneron Pharmaceuticals,10
 US,SCHW,Charles Schwab Corporation,10
 US,XOM,ExxonMobil,10
 US,AAPL,Apple Inc.,9
 US,CNC,Centene Corporation,9
+US,DRI,Darden Restaurants,9
 US,DXCM,Dexcom,9
 US,IFF,International Flavors & Fragrances,9
 US,IVZ,Invesco,9
 US,NDAQ,"Nasdaq, Inc.",9
-US,REGN,Regeneron Pharmaceuticals,9
 US,SWK,Stanley Black & Decker,9
 US,TGT,Target Corporation,9
+US,VLTO,Veralto,9
 US,VRTX,Vertex Pharmaceuticals,9
 US,WSM,"Williams-Sonoma, Inc.",9
 US,BAC,Bank of America,8
-US,DRI,Darden Restaurants,8
 US,EG,Everest Group,8
 US,HPQ,HP Inc.,8
 US,JNJ,Johnson & Johnson,8
 US,LLY,Lilly (Eli),8
 US,PANW,Palo Alto Networks,8
-US,VLTO,Veralto,8
 US,WST,West Pharmaceutical Services,8
 US,AMD,Advanced Micro Devices,7
 US,AMP,Ameriprise Financial,7
+US,AWK,American Water Works,7
 US,CAH,Cardinal Health,7
 US,CPAY,Corpay,7
 US,ED,Consolidated Edison,7
@@ -91,8 +92,9 @@ US,MRSH,Marsh McLennan,7
 US,ZBRA,Zebra Technologies,7
 US,ABNB,Airbnb,6
 US,ANET,Arista Networks,6
-US,AWK,American Water Works,6
+US,CDW,CDW Corporation,6
 US,CTAS,Cintas,6
+US,DIS,Walt Disney Company (The),6
 US,ETN,Eaton Corporation,6
 US,EXPE,Expedia Group,6
 US,GILD,Gilead Sciences,6
@@ -104,14 +106,13 @@ US,TRGP,Targa Resources,6
 US,VEEV,Veeva Systems,6
 US,AJG,Arthur J. Gallagher & Co.,5
 US,ALLE,Allegion,5
-US,CDW,CDW Corporation,5
 US,CHD,Church & Dwight,5
-US,DIS,Walt Disney Company (The),5
 US,EMR,Emerson Electric,5
 US,GPN,Global Payments,5
 US,HLT,Hilton Worldwide,5
 US,MCK,McKesson,5
 US,NDSN,Nordson Corporation,5
+US,OMC,Omnicom Group,5
 US,URI,United Rentals,5
 US,USB,U.S. Bancorp,5
 US,XYZ,"Block, Inc.",5
@@ -130,7 +131,6 @@ US,JPM,JPMorgan Chase,4
 US,KEYS,Keysight Technologies,4
 US,LITE,Lumentum,4
 US,MSI,Motorola Solutions,4
-US,OMC,Omnicom Group,4
 US,PFG,Principal Financial Group,4
 US,PKG,Packaging Corporation of America,4
 US,RJF,Raymond James Financial,4
@@ -138,6 +138,7 @@ US,ROP,Roper Technologies,4
 US,SOLV,Solventum,4
 US,TRV,Travelers Companies (The),4
 US,VRSN,Verisign,4
+US,WRB,W. R. Berkley Corporation,4
 US,ACGL,Arch Capital Group,3
 US,APD,Air Products,3
 US,CBOE,Cboe Global Markets,3
@@ -161,7 +162,6 @@ US,SJM,J.M. Smucker Company (The),3
 US,SWKS,Skyworks Solutions,3
 US,TDY,Teledyne Technologies,3
 US,WBD,Warner Bros. Discovery,3
-US,WRB,W. R. Berkley Corporation,3
 US,BLK,BlackRock,2
 US,BMY,Bristol Myers Squibb,2
 US,BNY,BNY Mellon,2
@@ -188,6 +188,7 @@ US,SBUX,Starbucks,2
 US,SNA,Snap-on,2
 US,STT,State Street Corporation,2
 US,TPR,"Tapestry, Inc.",2
+US,WTW,Willis Towers Watson,2
 US,ADM,Archer Daniels Midland,1
 US,AFL,Aflac,1
 US,ALL,Allstate,1
@@ -217,5 +218,4 @@ US,SLB,Schlumberger,1
 US,WAB,Wabtec,1
 US,WEC,WEC Energy Group,1
 US,WM,Waste Management,1
-US,WTW,Willis Towers Watson,1
 US,ZBH,Zimmer Biomet,1

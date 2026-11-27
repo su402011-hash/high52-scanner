@@ -1,3 +1,13 @@
 ﻿date,market,ticker,name,high,close,change_pct
-2026-11-27,JP,4502.T,武田薬品,7480.0,7433.0,2.52
-2026-11-27,JP,4523.T,エーザイ,5687.0,5656.0,1.38
+2026-11-27,JP,4502.T,武田薬品,7480.0,7250.0,-1.56
+2026-11-27,JP,4523.T,エーザイ,5687.0,5579.0,-0.92
+2026-11-27,US,AIZ,Assurant,329.0,327.37,0.5
+2026-11-27,US,AWK,American Water Works,153.9,153.48,0.42
+2026-11-27,US,CDW,CDW Corporation,180.43,178.77,2.17
+2026-11-27,US,DIS,Walt Disney Company (The),127.25,126.7,0.88
+2026-11-27,US,DRI,Darden Restaurants,244.35,243.69,1.05
+2026-11-27,US,OMC,Omnicom Group,92.14,91.86,1.28
+2026-11-27,US,REGN,Regeneron Pharmaceuticals,991.85,990.89,0.92
+2026-11-27,US,VLTO,Veralto,121.04,120.39,0.17
+2026-11-27,US,WRB,W. R. Berkley Corporation,79.78,79.17,-0.21
+2026-11-27,US,WTW,Willis Towers Watson,357.21,356.84,1.21
